@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="fr" class="Page" itemscope itemtype="http://schema.org/WebPage" prefix="og: http://ogp.me/ns#"
+    data-non-member data-site="BIM">
+
+<head prefix="website: http://ogp.me/ns/website#">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149901931-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-149901931-1');
+    </script>
+
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+
+    <title>Coordination et gestion de l’existant en BIM – Projet BLC -Par Antoine Bourlet et Loïc Sauvage-</title>
+
+    <link rel="canonical"
+        href="https://www.bimdaygva.ch/blog/coordination-et-gestion-de-l-existant-en-bim-projet-blc-par-antoine-bourlet-et-loic-sauvage.html">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta charset="utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <base
+        href="https://www.bimdaygva.ch/blog/coordination-et-gestion-de-l-existant-en-bim-projet-blc-par-antoine-bourlet-et-loic-sauvage.html">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta http-equiv="Content-Language" content="fr-FR">
+
+    <meta name="generator" content="BIM DAY GVA">
+
+    <meta name="publisher" content="BIM DAY GVA">
+
+    <meta name="reply-to" content="contact@bimdaygva.ch">
+
+    <meta name="email" content="contact@bimdaygva.ch" />
+
+    <meta name="contact" content="contact@bimdaygva.ch" />
+
+    <meta name="author" content="BIM DAY GVA">
+
+    <meta name="robots" content="follow,index,all" />
+
+    <meta name="organization" content="BIM DAY GVA" />
+
+    <meta name="Location" content="Centre de Conférence Ramada Encore Geneva 10 route des Jeunes – 1227 CAROUGE​ " />
+
+    <meta name="copyright" content="BIM DAY GVA Tous les droits sont réservés." />
+
+    <meta name="identifier-url"
+        content="bimdaygva.ch/blog/coordination-et-gestion-de-l-existant-en-bim-projet-blc-par-antoine-bourlet-et-loic-sauvage.html" />
+
+    <meta name="language" content="fr" />
+
+    <meta name="expires" content="never">
+
+    <meta name="description"
+        content="BIM DAY GVA, Le 1ier salon consacré au BIM en Suisse Romande avec le but de réunir les acteurs du BIM du Canton et présenter les possibilités qu'offre le BIM." />
+
+    <meta name="keywords"
+        content="BIM, Building Information Modeling, Building, Modeling, Information, IoT, Smart City, Smart Building, Technologies, Intelligence artificielle, Artificial Intelligence, Data, Cloud,
+     Réalité virtuelle, Virtual Reality, Réalité augmentée, VR, RA, Architecture, GVA, Geneva, Genève, Suisse, Suisse Romande, Canton, Ingénierie, enginnering, Innovation, Bâtiment, modélisation, coordination, planification,
+     3d, 4d, 5d, 6d,7d, conférences Genève, BIM DAY GVA, événements suisse, événements, visiteurs, exposants, conférenciers, Switzerland, suisse romande, salon, maquette numérique, transition numérique, Mackup, business conférences, exposition, expo,
+     stand, logiciel, logiciels, application, démonstration, demonstration, solutions logicielles, solutions numériques, construction, retours d’expérience, Projets, Projets réalisés, coworking, échange, exchange, Salle,
+     renom, ouvrages, ouvrages réalisés, architecture, infrastructure, digitalisation, patrimoine, facility management, CIM, City Information Modeling, état des lieux, Partenaires, convergence,
+     systèmes d'informations geographiques, SI, Réserver votre stand, Réserver, passage au BIM, formation, espace Atelier, Atelier, Espace, Centre de Conférence Ramada Encore Geneva,
+     Centre de Conférence, Ramada Encore Geneva, Ramada Encore, Carouge, La Praille centre commercial La Praille, Salon BIM Genève, Exposants salon BIM Genève, Bim Day GVA à Genève, Billetterie Bim Day Gva Genève, Acheter un billet pour Bim Day GVA à Genève, Devenir exposant au salon Bim Day GVA à Genève, Découvrir nouvelles technologie pour l'architecture Genève, Découvrir nouvelles technologies pour l'architecture Genève, Nouvelles technologies architecture BIM Genève, BIM Genève, Building Information Modeling Genève, IoT Suisse, Smart City Suisse, Smart Building Suisse, Intelligence Artificielle, Data, Cloud, RA Genève, VR Genève, Conférence BIM Genève, Buisness Conférence Genève, Application RA Genève, bimdaygva, BIM DAY GVA, Ramada BIM, Bim day Genève, BIM Geneve, BIM Geneve event, BIM evenement suisse" />
+
+    <meta name="news_keywords"
+        content="BIM, Building Information Modeling, Building, Modeling, Information, IoT, Smart City, Smart Building, Technologies, Intelligence artificielle, Artificial Intelligence, Data, Cloud,
+     Réalité virtuelle, Virtual Reality, Réalité augmentée, VR, RA, Architecture, GVA, Geneva, Genève, Suisse, Suisse Romande, Canton, Ingénierie, enginnering, Innovation, Bâtiment, modélisation, coordination, planification,
+     3d, 4d, 5d, 6d,7d, conférences Genève, BIM DAY GVA, événements suisse, événements, visiteurs, exposants, conférenciers, Switzerland, suisse romande, salon, maquette numérique, transition numérique, Mackup, business conférences, exposition, expo,
+     stand, logiciel, logiciels, application, démonstration, demonstration, solutions logicielles, solutions numériques, construction, retours d’expérience, Projets, Projets réalisés, coworking, échange, exchange, Salle,
+     renom, ouvrages, ouvrages réalisés, architecture, infrastructure, digitalisation, patrimoine, facility management, CIM, City Information Modeling, état des lieux, Partenaires, convergence,
+     systèmes d'informations geographiques, SI, Réserver votre stand, Réserver, passage au BIM, formation, espace Atelier, Atelier, Espace, Centre de Conférence Ramada Encore Geneva,
+     Centre de Conférence, Ramada Encore Geneva, Ramada Encore, Carouge, La Praille centre commercial La Praille, Salon BIM Genève, Exposants salon BIM Genève, Bim Day GVA à Genève, Billetterie Bim Day Gva Genève, Acheter un billet pour Bim Day GVA à Genève, Devenir exposant au salon Bim Day GVA à Genève, Découvrir nouvelles technologie pour l'architecture Genève, Découvrir nouvelles technologies pour l'architecture Genève, Nouvelles technologies architecture BIM Genève, BIM Genève, Building Information Modeling Genève, IoT Suisse, Smart City Suisse, Smart Building Suisse, Intelligence Artificielle, Data, Cloud, RA Genève, VR Genève, Conférence BIM Genève, Buisness Conférence Genève, Application RA Genève, bimdaygva, BIM DAY GVA, Ramada BIM, Bim day Genève, BIM Geneve, BIM Geneve event, BIM evenement suisse" />
+
+    <meta property="og:title"
+        content="Coordination et gestion de l’existant en BIM – Projet BLC -Par Antoine Bourlet et Loïc Sauvage-" />
+
+    <meta property="og:description"
+        content="BIM DAY GVA, Le 1ier salon consacré au BIM en Suisse Romande avec le but de réunir les acteurs du BIM du Canton et présenter les possibilités qu'offre le BIM.">
+
+    <meta property="og:image" content="https://www.bimdaygva.ch/img/logo.png">
+
+    <meta property="og:type" content="website">
+
+    <meta property="og:url"
+        content="https://www.bimdaygva.ch/blog/coordination-et-gestion-de-l-existant-en-bim-projet-blc-par-antoine-bourlet-et-loic-sauvage.html">
+
+    <meta property="og:site_name" content="BIM DAY GVA">
+    
+    <!-- CSS here -->
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <link rel="shortcut icon" type="image/x-icon" href="../img/logo.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- Bootstrap CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="../icons/bootstrap-icons.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+
+    <link href="../css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-transparent" aria-label="Navigation">
+            <div class="container h-100 align-items-start">
+                <a class="navbar-brand mt-2" href="../index.html">
+                    <img src="../img/logo.png">
+                </a>
+                <button class="mt-2 navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarBim" aria-controls="navbarBim" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon bim-toggle"></span>
+                </button>
+                <div class="collapse navbar-collapse mt-lg-5 mt-0" id="navbarBim">
+                    <ul class="menu-items navbar-nav mx-auto text-center align-items-center text-uppercase">
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold px-2" href="../index.html">accueil</a>
+                        </li>
+                        <div class="px-5 d-none d-lg-block"></div>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold px-2" href="../edition2.html">l'édition 2</a>
+                        </li>
+                        <div class="px-5 d-none d-lg-block"></div>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold px-2" href="../blog.html">blog</a>
+                        </li>
+                        <div class="px-5 d-none d-lg-block"></div>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="../contact.html">contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mx-5 d-none d-lg-block"></div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="pt-5 pb-5"></div>
+        <section class="pt-5 pb-5">
+            <div class="container mb-5">
+                <div class="row justify-content-center align-items-center text-center mb-5">
+                    <div class="col-lg-10 col-12">
+                        <div class="card contenu-article p-lg-5 p-3">
+                            <div class="card-body">
+                                <p class="green-text text-uppercase fw-bold text-start lh-1 mt-lg-0 mt-4">blog > 1iere
+                                    edition > Antoine
+                                    Bourlet et Loïc Sauvage</p>
+                                <h1 class="blog-item-title text-uppercase text-center">
+                                    Coordination et gestion de l’existant en BIM – Projet BLC
+                                </h1>
+                                <div class="row justify-content-center align-items-center mt-4">
+                                    <div class="col-lg-10 col-12">
+                                        <p class="blog-text">
+                                            Le projet BLC est un projet de modernisation du centre de traitement des
+                                            bagages
+                                            de
+                                            l’Aéroport de Genève. Le montant du marché s’élève à 90 millions de CHF, les
+                                            travaux ont
+                                            commencé en 2019 et s’achèveront en 2022. Le projet global se divise en
+                                            quatre
+                                            sous projets
+                                            :
+                                        </p>
+                                        <p class="blog-text">
+                                            - Le Terminal 1 et la Gare de Triage : travaux de curage et de
+                                            transformation
+                                        </p>
+                                        <p class="blog-text">
+                                            - La Cour de France : travaux de restructuration béton et surélévation de la
+                                            charpente
+                                        </p>
+                                        <p class="blog-text">
+                                            - Le bâtiment IATA : renforcement structurel et sismique
+                                        </p>
+                                        <p class="blog-text">
+                                            - La plate-forme extérieure Tribag : bâtiment neuf en structure métallique
+                                            composé d’un hall
+                                            logistique et de bureaux
+                                        </p>
+                                        <p class="blog-text">
+                                            Tous les travaux sont réalisés sans cessation d’activités de l’Aéroport de
+                                            Genève. La
+                                            Maîtrise d’Ouvrage, l’Aéroport de Genève, a séparé le projet en deux marchés
+                                            :
+                                            le marché
+                                            Bâtiment assuré par l’entreprise totale VCS SA et le marché Process assuré
+                                            par
+                                            TG concept et
+                                            l’entreprise Leonardo. VCS SA assure le pilotage complet de la partie BIM du
+                                            projet pour les
+                                            deux marchés.
+                                        </p>
+                                        <p class="blog-text">
+                                            Les objectifs BIM du client sont : de standardiser les rendus graphiques du
+                                            projet,
+                                            d’assurer la coordination 3D, d’obtenir des maquettes numériques compatibles
+                                            pour
+                                            l’exploitation maintenance avec un DOE numérique intégré.
+                                        </p>
+                                        <p class="blog-text">
+                                            L’Aéroport de Genève a lancé une campagne de scans 3D et de modélisation des
+                                            bâtiments
+                                            existants et a mis à disposition de VCS SA ces maquettes au format Revit à
+                                            la
+                                            signature du
+                                            marché. Les enjeux pour VCS SA sont : de fiabiliser et d’enrichir ces bases
+                                            Revit de
+                                            l’existant, de réaliser les études techniques et la synthèse, de produire
+                                            des
+                                            livrables
+                                            d’exécution, de livrer au client en fin de projet des maquettes as-built
+                                            fiabilisées sous
+                                            forme de DOE numérique.
+                                        </p>
+                                        <p class="blog-text">
+                                            VCS SA a dû mettre en place une stratégie, définir des processus et choisir
+                                            des
+                                            outils pour
+                                            répondre à ces enjeux. La mise en œuvre du BIM sur le projet a nécessité
+                                            l’évaluation du
+                                            niveau de maturité BIM des contributeurs, le choix et la mise en place d’une
+                                            plate-forme
+                                            BIM, le choix du logiciel de coordination et le développement d’outils
+                                            spécifiques pour le
+                                            projet. Les outils choisis pour réaliser le projet sont Revit pour la
+                                            modélisation,
+                                            Navisworks pour la coordination et la plate-forme BIM360 pour le partage des
+                                            fichiers et
+                                            l’espace de travail Cloud.
+                                        </p>
+                                        <p class="blog-text">
+                                            La coordination des études techniques se divise en 4 étapes :
+                                        </p>
+                                        <p class="blog-text">
+                                            - La mise en place et l’organisation de BIM360
+                                        </p>
+                                        <p class="blog-text">
+                                            - La compilation des maquettes : une maquette fédérée compile toutes les
+                                            maquettes bâtiments
+                                            et les maquettes Process dans l’espace cloud de BIM360. Il a été nécessaire
+                                            de
+                                            mettre en
+                                            place des codes couleurs dans toutes les maquettes des mandataires
+                                            correspondant
+                                            aux phases
+                                            : existant, existant conservé, existant démoli, projet et provisoire pour
+                                            permettre
+                                            d’effectuer la coordination avec clarté.
+                                        </p>
+                                        <p class="blog-text">
+                                            - La gestion des interfaces entre le process et le bâtiment : la détection
+                                            de
+                                            conflits est
+                                            effectuée avec Navisworks, un export du rapport de clashs est fait au format
+                                            XML, un script
+                                            Dynamo permet de générer des bulles dans Revit pour identifier l’emplacement
+                                            des
+                                            clashs et
+                                            de créer une nomenclature qui centralise les paramètres liés aux bulles.
+                                            L’export de la
+                                            nomenclature est transmis au lot Process qui peut répondre aux différentes
+                                            remarques dans un
+                                            fichier Excel qui est réintégré aux maquettes Revit.
+                                        </p>
+                                        <p class="blog-text">
+                                            - La synthèse technique est réalisée par un ingénieur de synthèse, il créé
+                                            des
+                                            remarques au
+                                            format BCF qui sont transmises aux mandataires et suivies grâce à la
+                                            plate-forme
+                                            BIMcollab
+                                            Zoom.
+                                        </p>
+                                        <p class="blog-text">
+                                            Au vu de l’ampleur du projet et du nombre d’intervenants, il est important
+                                            de
+                                            contrôler la «
+                                            santé » des maquettes numériques afin d’assurer un travail fluide aux
+                                            équipes
+                                            tout au long
+                                            du projet.
+                                        </p>
+                                        <p class="blog-text">
+                                            Pour assurer ces contrôles qualités, un fichier Excel est exporté grâce à un
+                                            script Dynamo
+                                            depuis chacun des modèles, il est ensuite importé dans PowerBI pour créer
+                                            des
+                                            tableaux de
+                                            bord comprenant les informations clés : la taille du fichier, le nombres et
+                                            les
+                                            types de
+                                            messages d’erreurs etc. Ces contrôles sont effectués régulièrement et
+                                            transmis
+                                            aux
+                                            mandataires.
+                                        </p>
+                                        <p class="blog-text">
+                                            La fiabilisation des maquettes de l’existant afin de réaliser les études
+                                            techniques est un
+                                            enjeu majeur du projet. L’outil utilisé est Dalux qui permet de visualiser
+                                            les
+                                            maquettes
+                                            numériques en 2D et en 3D sur le terrain à l’aide d’une tablette. Cet outil
+                                            permet de créer
+                                            des remarques avec des photos, des cotations, des annotations en cas
+                                            d’incohérence et
+                                            d’extraire des rapports qui seront transmis aux mandataires.
+                                        </p>
+                                        <p class="blog-text">
+                                            L’application Dalux Field de projection de la maquette numérique dans le
+                                            réel
+                                            grâce à la
+                                            réalité augmentée est en cours de mise en place. Elle permettra aux
+                                            conducteurs
+                                            de travaux
+                                            d’assurer le suivi de l’avancement et de fiabiliser les maquettes as-built
+                                            produites en fin
+                                            de projet.
+                                        </p>
+                                        <p class="blog-text">
+                                            En conclusion, il est important de travailler avec des maquettes de
+                                            l’existant
+                                            les plus
+                                            complètes possibles, de continuer à optimiser les processus et les outils au
+                                            cours du projet
+                                            et de fournir au client un avatar numérique fidèle au réel. Il faut
+                                            également
+                                            capitaliser
+                                            ses réussites et ses échecs afin de créer de la documentation, des process
+                                            et
+                                            des outils qui
+                                            pourront être réutilisés pour d’autres projets.
+                                        </p>
+                                        <hr class="mt-5">
+                                        <p class="fs-2">partagez sur</p>
+                                        <ul
+                                            class="list-inline align-items-center text-center justify-content-center share-icons">
+                                            <a class="text-decoration-none text-white me-5" target="_blank"
+                                                href="https://twitter.com/intent/tweet?text=Coordination%20et%20gestion%20de%20lexistant%20en%20BIM–Projet BLC-Par%20Antoine%20Bourlet%20et%20Loïc%20Sauvage0a%0dhttps://www.bimdaygva.ch/blog/coordination-et-gestion-de-l-existant-en-bim-projet-blc-par-antoine-bourlet-et-loic-sauvage.html">
+                                                <li class="list-inline-item rounded-circle">
+                                                    <i class="fa fa-twitter mt-lg-2 mt-2"></i>
+                                                </li>
+                                            </a>
+                                            <a class="text-decoration-none text-white" target="_blank"
+                                                href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.bimdaygva.ch/blog/coordination-et-gestion-de-l-existant-en-bim-projet-blc-par-antoine-bourlet-et-loic-sauvage.html&title=Bim%20Day%20GVA&summary=Bim%20Day%20GVA%20Blog&source=LinkedIn">
+                                                <li class="list-inline-item rounded-circle">
+                                                    <i class="fa fa-linkedin mt-lg-2 mt-2"></i>
+                                                </li>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--A lire egalement-->
+        <section class="">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-10 col-md-10 col-12">
+                        <h2 class="mb-3 similar">A lire egalement</h2>
+                        <div class="row row-cols-1 row-cols-lg-2 g-4">
+                            <div class="col">
+                                <a href="la-conduite-du-changement-dans-les-projets-d-infrastructures-complexes-par-sylvain-riss.html"
+                                    class="h-100 similar-article">
+                                    <div class="card mb-3 bg-transparent blog-item h-100">
+                                        <img src="../img/blog/similar-article-8.png" class="card-img-top">
+                                        <div class="card-body bg-white h-100 text-start d-flex flex-column">
+                                            <h4 class="flex-grow-1 card-title blog-item-title text-uppercase">
+                                                La conduite du changement dans les projets d’infrastructures complexes
+                                            </h4>
+                                            <p class="green-text fw-bold">Par Sylvain Riss</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="smart-city-gestion-intelligente-des-villes-par-ahmed-riad-sbartai.html"
+                                    class="h-100 similar-article">
+                                    <div class="card mb-3 bg-transparent blog-item h-100">
+                                        <img src="../img/blog/similar-article-9.png" class="card-img-top">
+                                        <div class="card-body bg-white h-100 text-start d-flex flex-column">
+                                            <h4 class="flex-grow-1 card-title blog-item-title text-uppercase">
+                                                Smart City : gestion intelligente des villes
+                                            </h4>
+                                            <p class="green-text fw-bold">Par Ahmed Riad Sbartaï</p>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Back to top -->
+    <div id="back-to-top"></div>
+    <!-- /Back to top -->
+
+    <!--Footer-->
+    <footer class="footer mt-auto pt-5">
+        <div class="container pt-5">
+            <div class="row justify-content-center align-items-center text-center">
+                <hr class="prog-line w-100 mx-auto mb-5">
+                <p class="bim-green-text fw-bold fs-3 text-uppercase">newsletters</p>
+                <div class="col-lg-6 col-md-10 col-12 mb-5">
+                    <div class="input-group input-group-lg mb-3 mb-lg-0">
+                        <input class="form-control text-white rounded-0 bim-green-border bg-transparent" type="email"
+                            placeholder="VOTRE ADRESSE MAIL" aria-label="newsletter" id="newsletter_email">
+                        <button
+                            class="btn bim-green-bg text-white rounded-0 text-uppercase fw-bold d-flex align-items-center justify-content-center"
+                            type="submit" onclick="subscribetonewsletter()" title="S'inscrire">
+                            s'inscrire
+                            <i class="arrow-btn bi bi-forward-fill ms-2"></i>
+                        </button>
+                    </div>
+                    <p id="_subscribetonewsletterstatus" class="bim-green-text"></p>
+                </div>
+                <hr class="prog-line w-100 mx-auto mb-3">
+            </div>
+            <div class="row justify-content-center align-items-center mb-5">
+                <ul class="list-inline align-items-center text-center justify-content-center social-icons">
+                    <a class="text-decoration-none text-white me-5" target="_blank"
+                        href="https://twitter.com/bimdaygva">
+                        <li class="list-inline-item rounded-circle">
+                            <i class="fa fa-twitter mt-lg-2 mt-2"></i>
+                        </li>
+                    </a>
+                    <a class="text-decoration-none text-white me-5" target="_blank"
+                        href="https://www.linkedin.com/in/bim-day-gva-a97982190/?originalSubdomain=ch">
+                        <li class="list-inline-item rounded-circle">
+                            <i class="fa fa-linkedin mt-lg-2 mt-2"></i>
+                        </li>
+                    </a>
+                    <a class="text-decoration-none text-white" target="_blank"
+                        href="https://www.instagram.com/bimdaygva/">
+                        <li class="list-inline-item rounded-circle">
+                            <i class="fa fa-instagram mt-lg-2 mt-2"></i>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/jquery-1.12.4.min.js"></script>
+
+    <!--contact js-->
+    <script src="../js/contact.js"></script>
+
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
