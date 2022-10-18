@@ -117,45 +117,48 @@
 <body>
   <header>
     <nav class="navbar fixed-top navbar-expand-lg bg-transparent" aria-label="Navigation" id="navbar">
-      <div class="container ps-lg-5 ps-0">
-        <a class="navbar-brand mt-2" href="index.html">
-          <img src="img/logo.png" id="logo" />
-        </a>
-        <button class="mt-2 navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarBim" aria-controls="navbarBim" aria-expanded="false" aria-label="Toggle navigation"
-          id="nav-toggle">
-          <span class="navbar-toggler-icon bim-toggle"></span>
-        </button>
-        <div class="collapse navbar-collapse my-auto d-flex justify-content-center
-        align-items-center" id="navbarBim">
-          <div class="px-4 d-none d-lg-block"></div>
-          <ul class="menu-items navbar-nav mx-auto text-center text-uppercase">
-            <li class="nav-item active">
-              <a class="nav-link fw-bold px-2" href="index.html">accueil</a>
-            </li>
-            <div class="px-4 d-none d-lg-block"></div>
-            <li class="nav-item">
-              <a class="nav-link fw-bold px-2" href="exposition.html">exposition</a>
-            </li>
-            <div class="px-4 d-none d-lg-block"></div>
-            <li class="nav-item">
-              <a class="nav-link fw-bold px-2" href="conference.html">conférence</a>
-            </li>
-            <div class="px-4 d-none d-lg-block"></div>
-            <li class="nav-item">
-              <a class="nav-link fw-bold px-2" href="blog.html">blog</a>
-            </li>
-            <div class="px-4 d-none d-lg-block"></div>
-            <li class="nav-item">
-              <a class="nav-link fw-bold" href="contact.html">contact</a>
-            </li>
-            <div class="px-4 d-none d-lg-block"></div>
-            <li class="nav-item">
-              <a class="btn button button-green nav-button mx-auto" href="billetterie.html" target="_blank">
+      <div class="container h-100">
+        <div class="row mx-auto w-100 h-100">
+          <div class="col-lg-2 col-12 d-flex justify-content-between align-items-start">
+            <a href="index.html" class="navbar-brand mt-2">
+              <img id="logo" src="img/logo.png">
+            </a>
+            <button class="mt-4 navbar-toggler navbar-dark collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarBim" aria-controls="navbarBim" aria-expanded="false" aria-label="Toggle navigation"
+              id="nav-toggle">
+              <span class="navbar-toggler-icon bim-toggle"></span>
+            </button>
+          </div>
+          <div class="col-lg-10 col-12 d-flex align-items-center">
+            <div id="navbarBim" class="navbar-collapse my-auto justify-content-between collapse">
+              <ul class="menu-items navbar-nav text-center text-uppercase mb-lg-0 mb-4 mx-auto">
+                <li class="nav-item active">
+                  <a class="nav-link fw-bold" href="index.html">accueil</a>
+                </li>
+                <div class="px-3 d-none d-lg-block"></div>
+                <li class="nav-item">
+                  <a class="nav-link fw-bold" href="exposition.html">exposition</a>
+                </li>
+                <div class="px-3 d-none d-lg-block"></div>
+                <li class="nav-item">
+                  <a class="nav-link fw-bold" href="conference.html">conférence</a>
+                </li>
+                <div class="px-3 d-none d-lg-block"></div>
+                <li class="nav-item">
+                  <a class="nav-link fw-bold" href="blog.html">blog</a>
+                </li>
+                <div class="px-3 d-none d-lg-block"></div>
+                <li class="nav-item">
+                  <a class="nav-link fw-bold" href="contact.html">contact</a>
+                </li>
+              </ul>
+              <div class="px-5 me-2 d-none d-lg-block"></div>
+              <a href="billetterie.html" target="_blank" class="mb-lg-0 mb-5 m-0 btn button 
+                button-green nav-button">
                 réservez votre pass
               </a>
-            </li>
-          </ul>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
@@ -169,7 +172,7 @@
         <div class="row justify-content-center text-center align-items-center">
           <div class="col-lg-10 col-12">
             <div class="mt-2">
-              <h4 class="mb-2"><strong>Participez au futur de la construction</strong></h4>
+              <h3 class="mb-2"><strong>Participez au futur de la construction</strong></h3>
               <h1 class="stroke-text-green">bim day gva</h1>
               <!-- <p class="small-stroke-text">Pour cette 2eme edition</p> -->
               <h2 class="event-infos">2 FEVRIER 2023</h2>
@@ -179,11 +182,12 @@
                 Retour en images
                 <i class="arrow-btn bi bi-forward-fill ms-2"></i>
               </a> -->
-              <div class="d-flex justify-content-center align-items-center">
-                <a href="billetterie.html" target="_blank" class="btn button button-green me-5">
+              <div class="d-flex justify-content-center align-items-center mt-4">
+                <a href="billetterie.html" target="_blank" class="btn button button-green btn-hero me-5">
                   JE RESERVE MON PASS
                 </a>
-                <a href="#" target="_blank" class="btn button button-green">
+                <a href=" https://docs.google.com/forms/d/e/1FAIpQLSfagbtfjw4QRMATCofQWm-0seiBqARZ_2wPo2y6BqFft3V_1Q/viewform?usp=sf_link"
+                  target="_blank" class="btn button button-green btn-hero">
                   JE DEVIENS EXPOSANT
                 </a>
               </div>
@@ -252,10 +256,10 @@
                   <img class="card-img-top img-fluid conf-card-img-top"
                     src="img/accueil/section-echanges/placeholder.jpg">
                   <div class="card-body p-0 mt-2">
-                    <p class="nom-conferencier">
+                    <p class="nom-conferencier m-0">
                       Franck Jurain
                     </p>
-                    <p class="prof-conferencier">
+                    <p class="prof-conferencier m-0">
                       Directeur de Betelec Genève
                     </p>
                   </div>
@@ -309,10 +313,10 @@
                   <img class="card-img-top img-fluid conf-card-img-top"
                     src="img/accueil/section-echanges/placeholder.jpg">
                   <div class="card-body p-0 mt-2">
-                    <p class="nom-conferencier">
+                    <p class="nom-conferencier m-0">
                       Franck Jurain
                     </p>
-                    <p class="prof-conferencier">
+                    <p class="prof-conferencier m-0">
                       Directeur de Betelec Genève
                     </p>
                   </div>
@@ -323,10 +327,10 @@
                   <img class="card-img-top img-fluid conf-card-img-top"
                     src="img/accueil/section-echanges/placeholder.jpg">
                   <div class="card-body p-0 mt-2">
-                    <p class="nom-conferencier">
+                    <p class="nom-conferencier m-0">
                       Franck Jurain
                     </p>
-                    <p class="prof-conferencier">
+                    <p class="prof-conferencier m-0">
                       Directeur de Betelec Genève
                     </p>
                   </div>
@@ -337,10 +341,10 @@
                   <img class="card-img-top img-fluid conf-card-img-top"
                     src="img/accueil/section-echanges/placeholder.jpg">
                   <div class="card-body p-0 mt-2">
-                    <p class="nom-conferencier">
+                    <p class="nom-conferencier m-0">
                       Franck Jurain
                     </p>
-                    <p class="prof-conferencier">
+                    <p class="prof-conferencier m-0">
                       Directeur de Betelec Genève
                     </p>
                   </div>
@@ -351,80 +355,10 @@
                   <img class="card-img-top img-fluid conf-card-img-top"
                     src="img/accueil/section-echanges/placeholder.jpg">
                   <div class="card-body p-0 mt-2">
-                    <p class="nom-conferencier">
+                    <p class="nom-conferencier m-0">
                       Franck Jurain
                     </p>
-                    <p class="prof-conferencier">
-                      Directeur de Betelec Genève
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col text-center mb-5">
-                <div class="card h-100 mb-2 bg-transparent">
-                  <img class="card-img-top img-fluid conf-card-img-top"
-                    src="img/accueil/section-echanges/placeholder.jpg">
-                  <div class="card-body p-0 mt-2">
-                    <p class="nom-conferencier">
-                      Franck Jurain
-                    </p>
-                    <p class="prof-conferencier">
-                      Directeur de Betelec Genève
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col text-center mb-5">
-                <div class="card h-100 mb-2 bg-transparent">
-                  <img class="card-img-top img-fluid conf-card-img-top"
-                    src="img/accueil/section-echanges/placeholder.jpg">
-                  <div class="card-body p-0 mt-2">
-                    <p class="nom-conferencier">
-                      Franck Jurain
-                    </p>
-                    <p class="prof-conferencier">
-                      Directeur de Betelec Genève
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col text-center mb-5">
-                <div class="card h-100 mb-2 bg-transparent">
-                  <img class="card-img-top img-fluid conf-card-img-top"
-                    src="img/accueil/section-echanges/placeholder.jpg">
-                  <div class="card-body p-0 mt-2">
-                    <p class="nom-conferencier">
-                      Franck Jurain
-                    </p>
-                    <p class="prof-conferencier">
-                      Directeur de Betelec Genève
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col text-center mb-5">
-                <div class="card h-100 mb-2 bg-transparent">
-                  <img class="card-img-top img-fluid conf-card-img-top"
-                    src="img/accueil/section-echanges/placeholder.jpg">
-                  <div class="card-body p-0 mt-2">
-                    <p class="nom-conferencier">
-                      Franck Jurain
-                    </p>
-                    <p class="prof-conferencier">
-                      Directeur de Betelec Genève
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col text-center mb-5">
-                <div class="card h-100 mb-2 bg-transparent">
-                  <img class="card-img-top img-fluid conf-card-img-top"
-                    src="img/accueil/section-echanges/placeholder.jpg">
-                  <div class="card-body p-0 mt-2">
-                    <p class="nom-conferencier">
-                      Franck Jurain
-                    </p>
-                    <p class="prof-conferencier">
+                    <p class="prof-conferencier m-0">
                       Directeur de Betelec Genève
                     </p>
                   </div>
@@ -444,16 +378,15 @@
           <div class="tab-pane fade" id="old-conf-tab-pane" role="tabpanel" aria-labelledby="old-conf-tab" tabindex="0">
             <div class="row row-cols-lg-5 row-cols-md-2 row-cols-1 justify-content-center align-items-start mt-5">
               <div class="col text-center mb-5">
-                <a class="text-decoration-none text-white card h-100 mb-2 bg-transparent"
-                href=""
-                target="_blank" title="Consulter l'article présenté par ce conférencier">
+                <a class="text-decoration-none text-white card h-100 mb-2 bg-transparent" href="" target="_blank"
+                  title="Consulter l'article présenté par ce conférencier">
                   <img class="card-img-top img-fluid conf-card-img-top"
                     src="img/accueil/section-echanges/editions-precedentes/emmanuel-di-giacomo.jpg">
                   <div class="card-body p-0 mt-2">
-                    <p class="nom-conferencier">
+                    <p class="nom-conferencier m-0">
                       Emmanuel Di Giacomo
                     </p>
-                    <p class="prof-conferencier">
+                    <p class="prof-conferencier m-0">
                       Responsable Europe Développement des écosystèmes BIM chez Autodesk
                     </p>
                   </div>
@@ -461,15 +394,15 @@
               </div>
               <div class="col text-center mb-5">
                 <a class="text-decoration-none text-white card h-100 mb-2 bg-transparent"
-                href="blog/presentation-du-bim-chez-walt-disny-imagineering-par-nawar-zreik.html"
-                target="_blank" title="Consulter l'article présenté par ce conférencier">
+                  href="blog/presentation-du-bim-chez-walt-disny-imagineering-par-nawar-zreik.html" target="_blank"
+                  title="Consulter l'article présenté par ce conférencier">
                   <img class="card-img-top img-fluid conf-card-img-top"
                     src="img/accueil/section-echanges/editions-precedentes/nawar-zreik.jpg">
                   <div class="card-body p-0 mt-2">
-                    <p class="nom-conferencier">
+                    <p class="nom-conferencier m-0">
                       Nawar Zreik
                     </p>
-                    <p class="prof-conferencier">
+                    <p class="prof-conferencier m-0">
                       BIM manager chez Walt Disney Imagineering
                     </p>
                   </div>
@@ -477,15 +410,15 @@
               </div>
               <div class="col text-center mb-5">
                 <a class="text-decoration-none text-white card h-100 mb-2 bg-transparent"
-                href="blog/convergence-des-mondes-numerique-et-physique-dans-les-projets-complexes-par-nassim-saoud.html"
-                target="_blank" title="Consulter l'article présenté par ce conférencier">
+                  href="blog/convergence-des-mondes-numerique-et-physique-dans-les-projets-complexes-par-nassim-saoud.html"
+                  target="_blank" title="Consulter l'article présenté par ce conférencier">
                   <img class="card-img-top img-fluid conf-card-img-top"
                     src="img/accueil/section-echanges/editions-precedentes/nassim-saoud.jpg">
                   <div class="card-body p-0 mt-2">
-                    <p class="nom-conferencier">
+                    <p class="nom-conferencier m-0">
                       Nassim Saoud
                     </p>
-                    <p class="prof-conferencier">
+                    <p class="prof-conferencier m-0">
                       Directeur EMEA (Europe, Middle East, Africa) chez Trimble Consulting
                     </p>
                   </div>
@@ -493,15 +426,15 @@
               </div>
               <div class="col text-center mb-5">
                 <a class="text-decoration-none text-white card h-100 mb-2 bg-transparent"
-                href="blog/les-enjeux-des-objets-dans-un-processus-bim-par-vincent-bleyenheuft.html"
-                target="_blank" title="Consulter l'article présenté par ce conférencier">
+                  href="blog/les-enjeux-des-objets-dans-un-processus-bim-par-vincent-bleyenheuft.html" target="_blank"
+                  title="Consulter l'article présenté par ce conférencier">
                   <img class="card-img-top img-fluid conf-card-img-top"
                     src="img/accueil/section-echanges/editions-precedentes/vincent-bleyenheuft.jpg">
                   <div class="card-body p-0 mt-2">
-                    <p class="nom-conferencier">
+                    <p class="nom-conferencier m-0">
                       Vincent Bleyenheuft
                     </p>
-                    <p class="prof-conferencier">
+                    <p class="prof-conferencier m-0">
                       Architecte & BIM Consultant chez CADatWORK
                     </p>
                   </div>
@@ -509,30 +442,30 @@
               </div>
               <div class="col text-center mb-5">
                 <a class="text-decoration-none text-white card h-100 mb-2 bg-transparent"
-                href="blog/bim-exploitation-et-jumeau-numerique-par-mathieu-rigaud.html"
-                target="_blank" title="Consulter l'article présenté par ce conférencier">
+                  href="blog/bim-exploitation-et-jumeau-numerique-par-mathieu-rigaud.html" target="_blank"
+                  title="Consulter l'article présenté par ce conférencier">
                   <img class="card-img-top img-fluid conf-card-img-top"
                     src="img/accueil/section-echanges/editions-precedentes/mathieu-rigaud.jpg">
                   <div class="card-body p-0 mt-2">
-                    <p class="nom-conferencier">
+                    <p class="nom-conferencier m-0">
                       Mathieu Rigaud
                     </p>
-                    <p class="prof-conferencier">
-                      Responsable des projets d'innovations BIM & Facility management chez Vinci Facilities                    </p>
+                    <p class="prof-conferencier m-0">
+                      Responsable des projets d'innovations BIM & Facility management chez Vinci Facilities </p>
                   </div>
                 </a>
               </div>
               <div class="col text-center mb-5">
                 <a class="text-decoration-none text-white card h-100 mb-2 bg-transparent"
-                href="blog/la-conduite-du-changement-dans-les-projets-d-infrastructures-complexes-par-sylvain-riss.html"
-                target="_blank" title="Consulter l'article présenté par ce conférencier">
+                  href="blog/la-conduite-du-changement-dans-les-projets-d-infrastructures-complexes-par-sylvain-riss.html"
+                  target="_blank" title="Consulter l'article présenté par ce conférencier">
                   <img class="card-img-top img-fluid conf-card-img-top"
                     src="img/accueil/section-echanges/editions-precedentes/sylvain-riss.jpg">
                   <div class="card-body p-0 mt-2">
-                    <p class="nom-conferencier">
+                    <p class="nom-conferencier m-0">
                       Sylvain Riss
                     </p>
-                    <p class="prof-conferencier">
+                    <p class="prof-conferencier m-0">
                       Directeur Numérique & BIM chez BG Ingénieurs Conseils
                     </p>
                   </div>
@@ -540,15 +473,15 @@
               </div>
               <div class="col text-center mb-5">
                 <a class="text-decoration-none text-white card h-100 mb-2 bg-transparent"
-                href="blog/le-nouveau-role-de-l-architecte-par-daniel-hurtubise.html"
-                target="_blank" title="Consulter l'article présenté par ce conférencier">
+                  href="blog/le-nouveau-role-de-l-architecte-par-daniel-hurtubise.html" target="_blank"
+                  title="Consulter l'article présenté par ce conférencier">
                   <img class="card-img-top img-fluid conf-card-img-top"
                     src="img/accueil/section-echanges/editions-precedentes/daniel-hurtubise.jpg">
                   <div class="card-body p-0 mt-2">
-                    <p class="nom-conferencier">
+                    <p class="nom-conferencier m-0">
                       Daniel Hurtubise
                     </p>
-                    <p class="prof-conferencier">
+                    <p class="prof-conferencier m-0">
                       BIM Guru chez Data-Shapes
                     </p>
                   </div>
@@ -556,15 +489,15 @@
               </div>
               <div class="col text-center mb-5">
                 <a class="text-decoration-none text-white card h-100 mb-2 bg-transparent"
-                href="blog/la-gestion-bim-et-cim-des-projets-a-l-echelle-urbaine-en-interface-avec-les-infrastructures-par-annalisa-de-maestri.html"
-                target="_blank" title="Consulter l'article présenté par ce conférencier">
+                  href="blog/la-gestion-bim-et-cim-des-projets-a-l-echelle-urbaine-en-interface-avec-les-infrastructures-par-annalisa-de-maestri.html"
+                  target="_blank" title="Consulter l'article présenté par ce conférencier">
                   <img class="card-img-top img-fluid conf-card-img-top"
                     src="img/accueil/section-echanges/editions-precedentes/annalisa-de-maestri.jpg">
                   <div class="card-body p-0 mt-2">
-                    <p class="nom-conferencier">
+                    <p class="nom-conferencier m-0">
                       Annalisa De Maestri
                     </p>
-                    <p class="prof-conferencier">
+                    <p class="prof-conferencier m-0">
                       Directrice de l'Environnement Numérique de Production, Data et BIM chez Bouygues Immobilier
                     </p>
                   </div>
@@ -572,15 +505,15 @@
               </div>
               <div class="col text-center mb-5">
                 <a class="text-decoration-none text-white card h-100 mb-2 bg-transparent"
-                href="blog/convergences-entre-le-bim-et-les-systemes-d-informations-geographiques-par-ophelie-vincendon-et-pascal-oerhli.html"
-                target="_blank" title="Consulter l'article présenté par ce conférencier">
+                  href="blog/convergences-entre-le-bim-et-les-systemes-d-informations-geographiques-par-ophelie-vincendon-et-pascal-oerhli.html"
+                  target="_blank" title="Consulter l'article présenté par ce conférencier">
                   <img class="card-img-top img-fluid conf-card-img-top"
                     src="img/accueil/section-echanges/editions-precedentes/ophelie-vincendon.jpg">
                   <div class="card-body p-0 mt-2">
-                    <p class="nom-conferencier">
+                    <p class="nom-conferencier m-0">
                       Ophélie Vincendon
                     </p>
-                    <p class="prof-conferencier">
+                    <p class="prof-conferencier m-0">
                       BIM Manager à l'Etat de Genève
                     </p>
                   </div>
@@ -588,15 +521,15 @@
               </div>
               <div class="col text-center mb-5">
                 <a class="text-decoration-none text-white card h-100 mb-2 bg-transparent"
-                href="blog/presentation-bim-du-projet-campus-pictet-de-rochemont-par-marjorie-janin.html"
-                target="_blank" title="Consulter l'article présenté par ce conférencier">
+                  href="blog/presentation-bim-du-projet-campus-pictet-de-rochemont-par-marjorie-janin.html"
+                  target="_blank" title="Consulter l'article présenté par ce conférencier">
                   <img class="card-img-top img-fluid conf-card-img-top"
                     src="img/accueil/section-echanges/editions-precedentes/marjorie-janin.jpg">
                   <div class="card-body p-0 mt-2">
-                    <p class="nom-conferencier">
+                    <p class="nom-conferencier m-0">
                       Marjorie Janin
                     </p>
-                    <p class="prof-conferencier">
+                    <p class="prof-conferencier m-0">
                       BIM Manager - AMO BIM chez CADatWORK-SWISS
                     </p>
                   </div>
@@ -604,15 +537,15 @@
               </div>
               <div class="col text-center mb-5">
                 <a class="text-decoration-none text-white card h-100 mb-2 bg-transparent"
-                href="blog/bim-lean-agile-par-serge-goepp.html"
-                target="_blank" title="Consulter l'article présenté par ce conférencier">
+                  href="blog/bim-lean-agile-par-serge-goepp.html" target="_blank"
+                  title="Consulter l'article présenté par ce conférencier">
                   <img class="card-img-top img-fluid conf-card-img-top"
                     src="img/accueil/section-echanges/editions-precedentes/serge-goepp.jpg">
                   <div class="card-body p-0 mt-2">
-                    <p class="nom-conferencier">
+                    <p class="nom-conferencier m-0">
                       Serge Goepp Dumery
                     </p>
-                    <p class="prof-conferencier">
+                    <p class="prof-conferencier m-0">
                       Dirigeant chez Lean Project
                     </p>
                   </div>
@@ -620,16 +553,64 @@
               </div>
               <div class="col text-center mb-5">
                 <a class="text-decoration-none text-white card h-100 mb-2 bg-transparent"
-                href="blog/la-digitalisation-et-les-innovations-par-aline-isoz.html"
-                target="_blank" title="Consulter l'article présenté par ce conférencier">
+                  href="blog/la-digitalisation-et-les-innovations-par-aline-isoz.html" target="_blank"
+                  title="Consulter l'article présenté par ce conférencier">
                   <img class="card-img-top img-fluid conf-card-img-top"
                     src="img/accueil/section-echanges/editions-precedentes/aline-isoz.jpg">
                   <div class="card-body p-0 mt-2">
-                    <p class="nom-conferencier">
+                    <p class="nom-conferencier m-0">
                       Aline Isoz
                     </p>
-                    <p class="prof-conferencier">
-                      Administratrice indépendante - Gouvernance  Stratégie  Ethique et transformation numérique
+                    <p class="prof-conferencier m-0">
+                      Administratrice indépendante - Gouvernance Stratégie Ethique et transformation numérique
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="col text-center mb-5">
+                <a class="text-decoration-none text-white card h-100 mb-2 bg-transparent"
+                  href="blog/la-digitalisation-un-vecteur-de-valorisation-de-votre-patrimoine-par-rodrigo-morales-et-romain-du-sordet.html"
+                  target="_blank" title="Consulter l'article présenté par ce conférencier">
+                  <img class="card-img-top img-fluid conf-card-img-top"
+                    src="img/accueil/section-echanges/editions-precedentes/rodrigo-morales.jpg">
+                  <div class="card-body p-0 mt-2">
+                    <p class="nom-conferencier m-0">
+                      Rodrigo Morales
+                    </p>
+                    <p class="prof-conferencier m-0">
+                      Intégrateur BIM au CERN
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="col text-center mb-5">
+                <a class="text-decoration-none text-white card h-100 mb-2 bg-transparent"
+                  href="blog/retour-d-experience-bim-d-un-maitre-douvrage-singulier-par-jean-hugues-hoarau.html"
+                  target="_blank" title="Consulter l'article présenté par ce conférencier">
+                  <img class="card-img-top img-fluid conf-card-img-top"
+                    src="img/accueil/section-echanges/editions-precedentes/jean-hugues-hoarau.jpg">
+                  <div class="card-body p-0 mt-2">
+                    <p class="nom-conferencier m-0">
+                      Jean Hugues Hoarau
+                    </p>
+                    <p class="prof-conferencier m-0">
+                      Head of Division - Real Estate & Logistics Group chez Pictet & Cie
+                    </p>
+                  </div>
+                </a>
+              </div>
+              <div class="col text-center mb-5">
+                <a class="text-decoration-none text-white card h-100 mb-2 bg-transparent"
+                  href="blog/infrastructure-&-cim-par-christophe-phanouvong.html" target="_blank"
+                  title="Consulter l'article présenté par ce conférencier">
+                  <img class="card-img-top img-fluid conf-card-img-top"
+                    src="img/accueil/section-echanges/editions-precedentes/christophe-phanouvong.jpg">
+                  <div class="card-body p-0 mt-2">
+                    <p class="nom-conferencier m-0">
+                      Christophe Phanouvong
+                    </p>
+                    <p class="prof-conferencier m-0">
+                      BIM Lead France chez Arcadis
                     </p>
                   </div>
                 </a>
@@ -699,7 +680,7 @@
           </div>
           <div class="col">
             <div class="carte-billetterie p-4 m-2 h-100">
-              <h4 class="section-sub-title text-lowercase">
+              <h4 class="section-sub-title">
                 L'édition 2023 de BIM DAY
                 GVA aura lieu le 2 février à
                 Palexpo, Genève.
@@ -714,8 +695,8 @@
         </div>
         <div class="pt-5"></div>
         <div class="row justify-content-center align-items-start">
-          <div class="col-12 text-center mb-2">
-            <img src="img/accueil/section-avenir/placeholder-2.png" class="avenir-img img-fluid">
+          <div class="col-12 text-center">
+            <img src="img/accueil/section-avenir/image.jpg" class="avenir-img img-fluid">
           </div>
         </div>
         <div class="pt-5"></div>
@@ -761,10 +742,10 @@
                 ce superbe salon annuel du BIM."
               </p>
               <div class="d-flex align-items-center">
-                <img src="img/accueil/section-avenir/quote/dussol.png" class="rounded-circle me-2">
+                <img src="img/accueil/section-temoignage/quote/dussol.jpg" class="img-fluid rounded-circle me-2">
                 <div class="small quote-infos">
-                  <p>Stéphane Dussol</p>
-                  <p>Directeur de Cad@work Swiss</p>
+                  <p class="m-0">Stéphane Dussol</p>
+                  <p class="m-0">Directeur de Cad@work Swiss</p>
                 </div>
                 <p></p>
               </div>
@@ -776,7 +757,7 @@
 
     <!--Participez section-->
     <section class="participez-section">
-      <div class="container mb-5">
+      <div class="container">
         <div class="row justify-content-center align-items-start mb-4">
           <div class="col-12 mb-2">
             <h2 class="section-title text-start">
@@ -786,59 +767,65 @@
         </div>
         <div class="row row-cols-lg-3 row-cols-1">
           <div class="col">
-            <div class="h-100 m-4 d-flex flex-column justify-content-start">
-              <h4 class="section-sub-title-green">
-                LES DERNIèRES INNOVATIONS
-              </h4>
-              <p class="section-col-text">
-                Les leaders du secteur transforment la
-                digitalisation du secteur en opportunité.
-                Découvrez les nouveaux outils et les
-                nouvelles technologies qu'ils mettent au
-                service de leur croissance.
-              </p>
-              <img src="img/accueil/section-participez/1.png" class="section-col-img img-fluid mx-auto">
+            <div class="h-100 d-flex flex-column justify-content-between">
+              <div>
+                <h4 class="section-sub-title-green">
+                  LES DERNIèRES INNOVATIONS
+                </h4>
+                <p class="section-col-text">
+                  Les leaders du secteur transforment la
+                  digitalisation du secteur en opportunité.
+                  Découvrez les nouveaux outils et les
+                  nouvelles technologies qu'ils mettent au
+                  service de leur croissance.
+                </p>
+              </div>
+              <img src="img/accueil/section-participez/1.jpg" class="section-col-img img-fluid mx-auto">
             </div>
           </div>
           <div class="col">
-            <div class="h-100 m-4 d-flex flex-column justify-content-start">
-              <h4 class="section-sub-title-green">
-                LES CONFéRENCES
-              </h4>
-              <p class="section-col-text">
-                Les derniers outils et les technologies
-                vous permettront de booster votre
-                productivité.
-                Découvrez
-                comment
-                connecter vos équipes, vos données et
-                vos workflows.
-              </p>
-              <img src="img/accueil/section-participez/2.png" class="section-col-img img-fluid mx-auto"
-                style="margin-top: 25px;">
+            <div class="h-100 d-flex flex-column justify-content-between">
+              <div>
+                <h4 class="section-sub-title-green">
+                  LES CONFéRENCES
+                </h4>
+                <p class="section-col-text">
+                  Les derniers outils et les technologies
+                  vous permettront de booster votre
+                  productivité.
+                  Découvrez
+                  comment
+                  connecter vos équipes, vos données et
+                  vos workflows.
+                </p>
+              </div>
+              <img src="img/accueil/section-participez/2.jpg" class="section-col-img img-fluid mx-auto">
             </div>
           </div>
           <div class="col">
-            <div class="h-100 m-4 d-flex flex-column justify-content-start">
-              <h4 class="section-sub-title-green">
-                LE NETWORKING
-              </h4>
-              <p class="section-col-text">
-                Les derniers outils et les technologies
-                vous permettront de booster votre
-                productivité.
-                Découvrez
-                comment
-                connecter vos équipes, vos données et
-                vos workflows.
-              </p>
-              <img src="img/accueil/section-participez/3.png" class="section-col-img img-fluid mx-auto"
-                style="margin-top: 25px;">
+            <div class="h-100 d-flex flex-column justify-content-between">
+              <div>
+                <h4 class="section-sub-title-green">
+                  LE NETWORKING
+                </h4>
+                <p class="section-col-text">
+                  Les derniers outils et les technologies
+                  vous permettront de booster votre
+                  productivité.
+                  Découvrez
+                  comment
+                  connecter vos équipes, vos données et
+                  vos workflows.
+                </p>
+              </div>
+              <img src="img/accueil/section-participez/3.jpg" class="section-col-img img-fluid mx-auto">
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <div class="pt-4 pb-4 mt-4"></div>
 
     <!--Devenir exposant section-->
     <section class="devenir-exposant-section pt-5 pb-5">
@@ -893,8 +880,9 @@
           </div>
         </div>
         <div class="row justify-content-center align-items-center mt-4">
-          <div class="col-12 mb-2">
-            <button class="btn btn-lg button button-blue mx-auto">JE DEVIENS EXPOSANT</button>
+          <div class="col-lg-4 col-12 mb-2">
+            <a href=" https://docs.google.com/forms/d/e/1FAIpQLSfagbtfjw4QRMATCofQWm-0seiBqARZ_2wPo2y6BqFft3V_1Q/viewform?usp=sf_link"
+              target="_blank" class="btn btn-lg button button-blue mx-auto">JE DEVIENS EXPOSANT</a>
           </div>
         </div>
       </div>
@@ -920,11 +908,11 @@
                 géomètre dans les projets BIM."
               </p>
               <div class="d-flex align-items-center">
-                <img src="img/accueil/section-temoignage/quote/dussol.png" class="rounded-circle me-2">
+                <img src="img/accueil/section-temoignage/quote/petit-jean.jpg" class="img-fluid rounded-circle me-2">
                 <div class="small quote-infos">
-                  <p>Mathieu Petitjean</p>
-                  <p>Directeur et Responsable pôle</p>
-                  <p>technique et 3D chez HKD Géomatique</p>
+                  <p class="m-0">Mathieu Petitjean</p>
+                  <p class="m-0">Directeur et Responsable pôle <br>
+                    technique et 3D chez HKD Géomatique</p>
                 </div>
                 <p></p>
               </div>
@@ -941,10 +929,10 @@
                 de passionnés."
               </p>
               <div class="d-flex align-items-center">
-                <img src="img/accueil/section-temoignage/quote/dussol.png" class="rounded-circle me-2">
+                <img src="img/accueil/section-temoignage/quote/rapo.jpg" class="img-fluid rounded-circle me-2">
                 <div class="small quote-infos">
-                  <p>David Rapo</p>
-                  <p>Fondateur de Draw-ing BIM solutions</p>
+                  <p class="m-0">David Rapo</p>
+                  <p class="m-0">Fondateur de Draw-ing BIM solutions</p>
                 </div>
                 <p></p>
               </div>
@@ -960,10 +948,10 @@
                 visions du digital et du BIM."
               </p>
               <div class="d-flex align-items-center">
-                <img src="img/accueil/section-temoignage/quote/dussol.png" class="rounded-circle me-2">
+                <img src="img/accueil/section-temoignage/quote/ziani.jpg" class="img-fluid rounded-circle me-2">
                 <div class="small quote-infos">
-                  <p>Hadjer Ziani</p>
-                  <p>Architecte & Référente BIM chez Dalux</p>
+                  <p class="m-0">Hadjer Ziani</p>
+                  <p class="m-0">Architecte & Référente BIM chez Dalux</p>
                 </div>
                 <p></p>
               </div>
@@ -1091,29 +1079,34 @@
         </div>
         <div class="row row-cols-lg-5 row-cols-2 justify-content-start align-items-center mt-5">
           <div class="col text-center mb-5">
-            <div class="card h-100 mb-2 bg-transparent">
-              <img class="card-img img-fluid conf-card-img-top" src="img/accueil/section-echanges/placeholder.jpg">
-            </div>
+            <a class="text-decoration-none card h-100 mb-2 bg-transparent" href="https://www.mum.ch/" target="_blank"
+              title="Visiter le site web">
+              <img class="card-img img-fluid conf-card-img-top" src="img/exposants/mensch.jpg">
+            </a>
           </div>
           <div class="col text-center mb-5">
-            <div class="card h-100 mb-2 bg-transparent">
+            <a class="text-decoration-none card h-100 mb-2 bg-transparent" href="#!" target="_blank"
+              title="Visiter le site web">
               <img class="card-img img-fluid conf-card-img-top" src="img/accueil/section-echanges/placeholder.jpg">
-            </div>
+            </a>
           </div>
           <div class="col text-center mb-5">
-            <div class="card h-100 mb-2 bg-transparent">
+            <a class="text-decoration-none card h-100 mb-2 bg-transparent" href="#!" target="_blank"
+              title="Visiter le site web">
               <img class="card-img img-fluid conf-card-img-top" src="img/accueil/section-echanges/placeholder.jpg">
-            </div>
+            </a>
           </div>
           <div class="col text-center mb-5">
-            <div class="card h-100 mb-2 bg-transparent">
+            <a class="text-decoration-none card h-100 mb-2 bg-transparent" href="#!" target="_blank"
+              title="Visiter le site web">
               <img class="card-img img-fluid conf-card-img-top" src="img/accueil/section-echanges/placeholder.jpg">
-            </div>
+            </a>
           </div>
           <div class="col text-center mb-5">
-            <div class="card h-100 mb-2 bg-transparent">
+            <a class="text-decoration-none card h-100 mb-2 bg-transparent" href="#!" target="_blank"
+              title="Visiter le site web">
               <img class="card-img img-fluid conf-card-img-top" src="img/accueil/section-echanges/placeholder.jpg">
-            </div>
+            </a>
           </div>
         </div>
         <div class="row mb-4">
@@ -1125,29 +1118,34 @@
         </div>
         <div class="row row-cols-lg-5 row-cols-2 justify-content-start align-items-center mt-5">
           <div class="col text-center mb-5">
-            <div class="card h-100 mb-2 bg-transparent">
-              <img class="card-img img-fluid conf-card-img-top" src="img/accueil/section-echanges/placeholder.jpg">
-            </div>
+            <a class="text-decoration-none card h-100 mb-2 bg-transparent" href="https://www.batimap.fr/"
+              target="_blank" title="Visiter le site web">
+              <img class="card-img img-fluid conf-card-img-top" src="img/partenaires/batimap.jpg">
+            </a>
           </div>
           <div class="col text-center mb-5">
-            <div class="card h-100 mb-2 bg-transparent">
-              <img class="card-img img-fluid conf-card-img-top" src="img/accueil/section-echanges/placeholder.jpg">
-            </div>
+            <a class="text-decoration-none card h-100 mb-2 bg-transparent" href="http://www.batibtp.fr/" target="_blank"
+              title="Visiter le site web">
+              <img class="card-img img-fluid conf-card-img-top" src="img/partenaires/batibtp.jpg">
+            </a>
           </div>
           <div class="col text-center mb-5">
-            <div class="card h-100 mb-2 bg-transparent">
-              <img class="card-img img-fluid conf-card-img-top" src="img/accueil/section-echanges/placeholder.jpg">
-            </div>
+            <a class="text-decoration-none card h-100 mb-2 bg-transparent" href="http://www.toutlebim.fr/"
+              target="_blank" title="Visiter le site web">
+              <img class="card-img img-fluid conf-card-img-top" src="img/partenaires/toutlebim.jpg">
+            </a>
           </div>
           <div class="col text-center mb-5">
-            <div class="card h-100 mb-2 bg-transparent">
-              <img class="card-img img-fluid conf-card-img-top" src="img/accueil/section-echanges/placeholder.jpg">
-            </div>
+            <a class="text-decoration-none card h-100 mb-2 bg-transparent" href="https://bim-manager.fr" target="_blank"
+              title="Visiter le site web">
+              <img class="card-img img-fluid conf-card-img-top" src="img/partenaires/bim-manager.jpg">
+            </a>
           </div>
           <div class="col text-center mb-5">
-            <div class="card h-100 mb-2 bg-transparent">
-              <img class="card-img img-fluid conf-card-img-top" src="img/accueil/section-echanges/placeholder.jpg">
-            </div>
+            <a class="text-decoration-none card h-100 mb-2 bg-transparent" href="https://www.immobilier.ch/"
+              target="_blank" title="Visiter le site web">
+              <img class="card-img img-fluid conf-card-img-top" src="img/partenaires/immobilier.jpg">
+            </a>
           </div>
         </div>
       </div>

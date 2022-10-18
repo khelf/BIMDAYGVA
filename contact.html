@@ -5,14 +5,14 @@
 <head prefix="website: http://ogp.me/ns/website#">
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149901931-1"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149901931-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'UA-149901931-1');
-    </script>
+    </script> -->
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -21,7 +21,7 @@
 
     <title>BIM DAY GVA | Contactez-Nous</title>
 
-    <link rel="canonical" href="https://www.bimdaygva.ch/contact.html">
+    <!-- <link rel="canonical" href="https://www.bimdaygva.ch/contact.html">
 
     <meta charset="utf-8" />
 
@@ -95,7 +95,7 @@
 
     <meta property="og:url" content="https://www.bimdaygva.ch/contact.html">
 
-    <meta property="og:site_name" content="BIM DAY GVA">
+    <meta property="og:site_name" content="BIM DAY GVA"> -->
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
     <link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
@@ -114,38 +114,51 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg bg-transparent" aria-label="Navigation" id="navbar">
-            <div class="container h-100 align-items-start">
-                <a class="navbar-brand mt-2" href="index.html">
-                    <img src="img/logo.png">
+        <nav class="navbar fixed-top navbar-expand-lg bg-transparent" aria-label="Navigation" id="navbar">
+          <div class="container h-100">
+            <div class="row mx-auto w-100 h-100">
+              <div class="col-lg-2 col-12 d-flex justify-content-between align-items-start">
+                <a href="index.html" class="navbar-brand mt-2">
+                  <img id="logo" src="img/logo.png">
                 </a>
-                <button class="mt-2 navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarBim" aria-controls="navbarBim" aria-expanded="false"
-                    aria-label="Toggle navigation" id="nav-toggle">
-                    <span class="navbar-toggler-icon bim-toggle"></span>
+                <button class="mt-4 navbar-toggler navbar-dark collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarBim" aria-controls="navbarBim" aria-expanded="false" aria-label="Toggle navigation"
+                  id="nav-toggle">
+                  <span class="navbar-toggler-icon bim-toggle"></span>
                 </button>
-                <div class="collapse navbar-collapse mt-lg-5 mt-0" id="navbarBim">
-                    <ul class="menu-items navbar-nav mx-auto text-center align-items-center text-uppercase">
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold px-2" href="index.html">accueil</a>
-                        </li>
-                        <div class="px-5 d-none d-lg-block"></div>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold px-2" href="edition2.html">l'édition 2</a>
-                        </li>
-                        <div class="px-5 d-none d-lg-block"></div>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold px-2" href="blog.html">blog</a>
-                        </li>
-                        <div class="px-5 d-none d-lg-block"></div>
-                        <li class="nav-item active">
-                            <a class="nav-link fw-bold" href="contact.html">contact</a>
-                        </li>
-                        <!-- <div class="d-block d-lg-none pt-5 pb-5"></div> -->
-                    </ul>
+              </div>
+              <div class="col-lg-10 col-12 d-flex align-items-center">
+                <div id="navbarBim" class="navbar-collapse my-auto justify-content-between collapse">
+                  <ul class="menu-items navbar-nav text-center text-uppercase mb-lg-0 mb-4 mx-auto">
+                    <li class="nav-item">
+                      <a class="nav-link fw-bold" href="index.html">accueil</a>
+                    </li>
+                    <div class="px-3 d-none d-lg-block"></div>
+                    <li class="nav-item">
+                      <a class="nav-link fw-bold" href="exposition.html">exposition</a>
+                    </li>
+                    <div class="px-3 d-none d-lg-block"></div>
+                    <li class="nav-item">
+                      <a class="nav-link fw-bold" href="conference.html">conférence</a>
+                    </li>
+                    <div class="px-3 d-none d-lg-block"></div>
+                    <li class="nav-item">
+                      <a class="nav-link fw-bold" href="blog.html">blog</a>
+                    </li>
+                    <div class="px-3 d-none d-lg-block"></div>
+                    <li class="nav-item active">
+                      <a class="nav-link fw-bold" href="contact.html">contact</a>
+                    </li>
+                  </ul>
+                  <div class="px-5 me-2 d-none d-lg-block"></div>
+                  <a href="billetterie.html" target="_blank" class="mb-lg-0 mb-5 m-0 btn button 
+                    button-green nav-button">
+                    réservez votre pass
+                  </a>
                 </div>
-                <div class="mx-5 d-none d-lg-block"></div>
+              </div>
             </div>
+          </div>
         </nav>
     </header>
 
@@ -157,7 +170,7 @@
                 <div class="row justify-content-center align-items-center text-uppercase text-center mb-5">
                     <div class="col-lg-10 col-12">
                         <p class="lead bim-green-text fw-bold">vous avez une question</p>
-                        <h1 class="stroke-text contact-titles">contactez-nous</h1>
+                        <h1 class="section-title contact-titles">contactez-nous</h1>
                     </div>
                 </div>
                 <div class="row g-3 justify-content-center align-items-center text-uppercase" id="contactForm"
@@ -208,7 +221,7 @@
             <div class="container mb-5">
                 <div class="row justify-content-center align-items-center text-center mb-5">
                     <div class="col-lg-9 col-md-10 col-12">
-                        <h1 class="stroke-text contact-titles">infos pratiques</h1>
+                        <h1 class="section-title contact-titles">infos pratiques</h1>
                     </div>
                     <div class="col-lg-10 mt-5">
                         <iframe
@@ -251,11 +264,9 @@
         </section>
     </main>
 
-
     <!-- Back to top -->
     <div id="back-to-top"></div>
     <!-- /Back to top -->
-
 
     <!--Footer-->
     <footer class="footer mt-auto pt-5">

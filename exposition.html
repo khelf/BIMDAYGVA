@@ -117,69 +117,102 @@
 <body>
     <header>
         <nav class="navbar fixed-top navbar-expand-lg bg-transparent" aria-label="Navigation" id="navbar">
-            <div class="container ps-lg-5 ps-0">
-                <a class="navbar-brand mt-2" href="index.html">
-                    <img src="img/logo.png" id="logo" />
-                </a>
-                <button class="mt-2 navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarBim" aria-controls="navbarBim" aria-expanded="false"
-                    aria-label="Toggle navigation" id="nav-toggle">
-                    <span class="navbar-toggler-icon bim-toggle"></span>
-                </button>
-                <div class="collapse navbar-collapse my-auto d-flex justify-content-center
-        align-items-center" id="navbarBim">
-                    <div class="px-4 d-none d-lg-block"></div>
-                    <ul class="menu-items navbar-nav mx-auto text-center text-uppercase">
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold px-2" href="index.html">accueil</a>
-                        </li>
-                        <div class="px-4 d-none d-lg-block"></div>
-                        <li class="nav-item active">
-                            <a class="nav-link fw-bold px-2" href="exposition.html">exposition</a>
-                        </li>
-                        <div class="px-4 d-none d-lg-block"></div>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold px-2" href="conference.html">conférence</a>
-                        </li>
-                        <div class="px-4 d-none d-lg-block"></div>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold px-2" href="blog.html">blog</a>
-                        </li>
-                        <div class="px-4 d-none d-lg-block"></div>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold" href="contact.html">contact</a>
-                        </li>
-                        <div class="px-4 d-none d-lg-block"></div>
-                        <li class="nav-item">
-                            <a class="btn button button-green nav-button mx-auto" href="billetterie.html"
-                                target="_blank">
+            <div class="container h-100">
+                <div class="row mx-auto w-100 h-100">
+                    <div class="col-lg-2 col-12 d-flex justify-content-between align-items-start">
+                        <a href="index.html" class="navbar-brand mt-2">
+                            <img id="logo" src="img/logo.png">
+                        </a>
+                        <button class="mt-4 navbar-toggler navbar-dark collapsed" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#navbarBim" aria-controls="navbarBim"
+                            aria-expanded="false" aria-label="Toggle navigation" id="nav-toggle">
+                            <span class="navbar-toggler-icon bim-toggle"></span>
+                        </button>
+                    </div>
+                    <div class="col-lg-10 col-12 d-flex align-items-center">
+                        <div id="navbarBim" class="navbar-collapse my-auto justify-content-between collapse">
+                            <ul class="menu-items navbar-nav text-center text-uppercase mb-lg-0 mb-4 mx-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link fw-bold" href="index.html">accueil</a>
+                                </li>
+                                <div class="px-3 d-none d-lg-block"></div>
+                                <li class="nav-item active">
+                                    <a class="nav-link fw-bold" href="exposition.html">exposition</a>
+                                </li>
+                                <div class="px-3 d-none d-lg-block"></div>
+                                <li class="nav-item">
+                                    <a class="nav-link fw-bold" href="conference.html">conférence</a>
+                                </li>
+                                <div class="px-3 d-none d-lg-block"></div>
+                                <li class="nav-item">
+                                    <a class="nav-link fw-bold" href="blog.html">blog</a>
+                                </li>
+                                <div class="px-3 d-none d-lg-block"></div>
+                                <li class="nav-item">
+                                    <a class="nav-link fw-bold" href="contact.html">contact</a>
+                                </li>
+                            </ul>
+                            <div class="px-5 me-2 d-none d-lg-block"></div>
+                            <a href="billetterie.html" target="_blank" class="mb-lg-0 mb-5 m-0 btn button 
+                    button-green nav-button">
                                 réservez votre pass
                             </a>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
     <main>
         <div class="pt-5 pb-5 mt-5"></div>
-<!--Devenir exposant section-->
-<section class="inscription-exposant-section pt-5 pb-5">
-    <div class="container">
-        <div class="row mb-4 justify-content-center">
-            <div class="col-lg-10 col-12 mb-5 text-center">
-                <div class="row mb-4 justify-content-between">
-                    <div class="col-lg-6 col-12">
-                        
+        <!--hero section-->
+        <section class="inscription-exposant-section pt-5">
+            <div class="container">
+                <div class="row mb-4 justify-content-center">
+                    <div class="col-lg-10 col-12 mb-5 text-center">
+                        <div class="row mb-4 justify-content-around">
+                            <div class="col-lg-5 col-12 mb-5 mb-lg-0">
+                                <h2 class="section-title mb-3">
+                                    EXPOSANTS
+                                </h2>
+                                <img src="img/exposition/1.jpg" class="img-fluid expo-img">
+                                <p class="mt-3 expo-text">
+                                    BIM DAY GVA est l’endroit idéal pour mettre en
+                                    valeur votre expertise dans le domaine de la
+                                    construction, pour mettre en valeur vos
+                                    dernières innovations technologiques.
+                                    Vous pourrez développer votre réseau et
+                                    générer de nouveaux leads qualifiés
+                                    commerciaux mais aussi accélérer la
+                                    transformation digitale de votre entreprise et
+                                    de l’écosystème de votre organisation.
+                                </p>
+                            </div>
+                            <div class="col-lg-5 col-12">
+                                <h2 class="section-title mb-3">
+                                    PARTENAIRES
+                                </h2>
+                                <img src="img/exposition/2.jpg" class="img-fluid expo-img">
+                                <p class="mt-3 expo-text">
+                                    BIM DAY GVA offre aux partenaires la
+                                    possibilité de présenter leurs innovations, de
+                                    promouvoir leurs solutions, d’associer leur
+                                    marque à une expérience unique.
+                                    C'est aussi un lieu de rencontre pour les
+                                    diverses communautés de Maîtres d'Ouvrage,
+                                    d'ingénieurs, d'architectes, d’acteurs de la
+                                    technologie et de leaders internationaux du
+                                    secteur de la construction.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
         <!--Devenir exposant section-->
-        <section class="inscription-exposant-section pt-5 pb-5">
+        <section class="inscription-exposant-section pt-5">
             <div class="container">
                 <div class="row mb-4 justify-content-center">
                     <div class="col-lg-10 col-12 mb-5 text-center">
@@ -195,7 +228,8 @@
                         </h5>
                     </div>
                     <div class="col-lg-4 col-12 mb-2 text-center">
-                        <a href="#" target="_blank" class="btn button button-green">
+                        <a href=" https://docs.google.com/forms/d/e/1FAIpQLSfagbtfjw4QRMATCofQWm-0seiBqARZ_2wPo2y6BqFft3V_1Q/viewform?usp=sf_link"
+                         target="_blank" class="btn button button-green">
                             JE DEVIENS EXPOSANT OU PARTENAIRE
                         </a>
                     </div>
@@ -233,8 +267,7 @@
                                                 <img src="img/accueil/section-echanges/placeholder.jpg"
                                                     class="modal-expo-img mb-3">
                                                 <p class="modal-expo-info m-0">Site web:</p>
-                                                <a class="modal-expo-link"
-                                                href="#" target="_blank">
+                                                <a class="modal-expo-link" href="#" target="_blank">
                                                     https://.......
                                                 </a>
                                             </div>
@@ -277,8 +310,7 @@
                                                 <img src="img/accueil/section-echanges/placeholder.jpg"
                                                     class="modal-expo-img mb-3">
                                                 <p class="modal-expo-info m-0">Site web:</p>
-                                                <a class="modal-expo-link"
-                                                href="#" target="_blank">
+                                                <a class="modal-expo-link" href="#" target="_blank">
                                                     https://.......
                                                 </a>
                                             </div>
@@ -321,8 +353,7 @@
                                                 <img src="img/accueil/section-echanges/placeholder.jpg"
                                                     class="modal-expo-img mb-3">
                                                 <p class="modal-expo-info m-0">Site web:</p>
-                                                <a class="modal-expo-link"
-                                                href="#" target="_blank">
+                                                <a class="modal-expo-link" href="#" target="_blank">
                                                     https://.......
                                                 </a>
                                             </div>
@@ -365,8 +396,7 @@
                                                 <img src="img/accueil/section-echanges/placeholder.jpg"
                                                     class="modal-expo-img mb-3">
                                                 <p class="modal-expo-info m-0">Site web:</p>
-                                                <a class="modal-expo-link"
-                                                href="#" target="_blank">
+                                                <a class="modal-expo-link" href="#" target="_blank">
                                                     https://.......
                                                 </a>
                                             </div>
@@ -409,8 +439,7 @@
                                                 <img src="img/accueil/section-echanges/placeholder.jpg"
                                                     class="modal-expo-img mb-3">
                                                 <p class="modal-expo-info m-0">Site web:</p>
-                                                <a class="modal-expo-link"
-                                                href="#" target="_blank">
+                                                <a class="modal-expo-link" href="#" target="_blank">
                                                     https://.......
                                                 </a>
                                             </div>
@@ -453,8 +482,7 @@
                                                 <img src="img/accueil/section-echanges/placeholder.jpg"
                                                     class="modal-expo-img mb-3">
                                                 <p class="modal-expo-info m-0">Site web:</p>
-                                                <a class="modal-expo-link"
-                                                href="#" target="_blank">
+                                                <a class="modal-expo-link" href="#" target="_blank">
                                                     https://.......
                                                 </a>
                                             </div>
@@ -497,8 +525,7 @@
                                                 <img src="img/accueil/section-echanges/placeholder.jpg"
                                                     class="modal-expo-img mb-3">
                                                 <p class="modal-expo-info m-0">Site web:</p>
-                                                <a class="modal-expo-link"
-                                                href="#" target="_blank">
+                                                <a class="modal-expo-link" href="#" target="_blank">
                                                     https://.......
                                                 </a>
                                             </div>
@@ -541,8 +568,7 @@
                                                 <img src="img/accueil/section-echanges/placeholder.jpg"
                                                     class="modal-expo-img mb-3">
                                                 <p class="modal-expo-info m-0">Site web:</p>
-                                                <a class="modal-expo-link"
-                                                href="#" target="_blank">
+                                                <a class="modal-expo-link" href="#" target="_blank">
                                                     https://.......
                                                 </a>
                                             </div>
@@ -585,8 +611,7 @@
                                                 <img src="img/accueil/section-echanges/placeholder.jpg"
                                                     class="modal-expo-img mb-3">
                                                 <p class="modal-expo-info m-0">Site web:</p>
-                                                <a class="modal-expo-link"
-                                                href="#" target="_blank">
+                                                <a class="modal-expo-link" href="#" target="_blank">
                                                     https://.......
                                                 </a>
                                             </div>
@@ -629,8 +654,7 @@
                                                 <img src="img/accueil/section-echanges/placeholder.jpg"
                                                     class="modal-expo-img mb-3">
                                                 <p class="modal-expo-info m-0">Site web:</p>
-                                                <a class="modal-expo-link"
-                                                href="#" target="_blank">
+                                                <a class="modal-expo-link" href="#" target="_blank">
                                                     https://.......
                                                 </a>
                                             </div>
@@ -670,34 +694,38 @@
                 </div>
                 <div class="row row-cols-lg-5 row-cols-2 justify-content-start align-items-center mt-5">
                     <div class="col text-center mb-5">
-                        <div class="card h-100 mb-2 bg-transparent">
-                            <img class="card-img img-fluid conf-card-img-top"
-                                src="img/accueil/section-echanges/placeholder.jpg">
-                        </div>
+                        <a class="text-decoration-none card h-100 mb-2 bg-transparent" href="https://www.mum.ch/"
+                            target="_blank" title="Visiter le site web">
+                            <img class="card-img img-fluid conf-card-img-top" src="img/exposants/mensch.jpg">
+                        </a>
                     </div>
                     <div class="col text-center mb-5">
-                        <div class="card h-100 mb-2 bg-transparent">
+                        <a class="text-decoration-none card h-100 mb-2 bg-transparent" href="#!" target="_blank"
+                            title="Visiter le site web">
                             <img class="card-img img-fluid conf-card-img-top"
                                 src="img/accueil/section-echanges/placeholder.jpg">
-                        </div>
+                        </a>
                     </div>
                     <div class="col text-center mb-5">
-                        <div class="card h-100 mb-2 bg-transparent">
+                        <a class="text-decoration-none card h-100 mb-2 bg-transparent" href="#!" target="_blank"
+                            title="Visiter le site web">
                             <img class="card-img img-fluid conf-card-img-top"
                                 src="img/accueil/section-echanges/placeholder.jpg">
-                        </div>
+                        </a>
                     </div>
                     <div class="col text-center mb-5">
-                        <div class="card h-100 mb-2 bg-transparent">
+                        <a class="text-decoration-none card h-100 mb-2 bg-transparent" href="#!" target="_blank"
+                            title="Visiter le site web">
                             <img class="card-img img-fluid conf-card-img-top"
                                 src="img/accueil/section-echanges/placeholder.jpg">
-                        </div>
+                        </a>
                     </div>
                     <div class="col text-center mb-5">
-                        <div class="card h-100 mb-2 bg-transparent">
+                        <a class="text-decoration-none card h-100 mb-2 bg-transparent" href="#!" target="_blank"
+                            title="Visiter le site web">
                             <img class="card-img img-fluid conf-card-img-top"
                                 src="img/accueil/section-echanges/placeholder.jpg">
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>

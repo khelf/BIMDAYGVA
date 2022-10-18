@@ -7,10 +7,8 @@ $(window).on('scroll', function () {
   var wScroll = $(this).scrollTop();
   if (scroll > 100 && $(window).width() > 991) {
     $("#navbar").removeClass("bg-transparent").css("background-color" , "#020d1f");
-    $("#logo").css("width", "50px")
   } else {
     $("#navbar").addClass("bg-transparent") 
-    $("#logo").css("width", "90px")
   }
 	if (scroll < 400) {
     $('#back-top').fadeIn(500);
