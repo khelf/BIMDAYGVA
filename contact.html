@@ -169,7 +169,7 @@
             <div class="container mb-5">
                 <div class="row justify-content-center align-items-center text-uppercase text-center mb-5">
                     <div class="col-lg-10 col-12">
-                        <p class="lead bim-green-text fw-bold">vous avez une question</p>
+                        <h3 class="section-sub-title">vous avez une question</h3>
                         <h1 class="section-title contact-titles">contactez-nous</h1>
                     </div>
                 </div>
@@ -177,7 +177,7 @@
                     novalidate="novalidate">
                     <div class="col-12 col-lg-10">
                         <div class="custom-select">
-                            <select class="form-select form-select-lg bim-green-border rounded rounded-3"
+                            <select class="form-select form-select-lg"
                                 aria-label="Catégorie du visiteur" id="form_category">
                                 <option value="Vide">VOUS ÊTES</option>
                                 <option value="Visiteur">Visiteur</option>
@@ -188,25 +188,26 @@
                     </div>
                     <div class="col-lg-5 col-12">
                         <input type="text"
-                            class="form-control form-control-lg bg-transparent bim-green-border rounded rounded-3"
+                            class="form-control form-control-lg"
                             id="form_firstname" placeholder="NOM">
                     </div>
                     <div class="col-lg-5 col-12">
                         <input type="text"
-                            class="form-control form-control-lg bg-transparent bim-green-border rounded rounded-3"
+                            class="form-control form-control-lg"
                             id="form_lastname" placeholder="PRENOM">
                     </div>
                     <div class="col-12 col-lg-10">
                         <input type="email"
-                            class="form-control form-control-lg bg-transparent bim-green-border rounded rounded-3"
+                            class="form-control form-control-lg"
                             id="form_email" placeholder="ADRESSE MAIL">
                     </div>
                     <div class="col-12 col-lg-10">
-                        <textarea class="form-control form-control-lg bg-transparent bim-green-border rounded rounded-3"
+                        <textarea class="form-control form-control-lg"
                             id="form_message" rows="6" rows="6" placeholder="MESSAGE"></textarea>
                     </div>
                     <div class="col-12 col-lg-10">
-                        <button type="submit" name="" id="_sendmessage" value="Envoyer" class="btn btn-lg btn-bim-fill"
+                        <button type="submit" name="" id="_sendmessage" value="Envoyer" 
+                        class="btn button button-green"
                             onclick="sendmessage()">ENVOYER</button>
                     </div>
                     <div class="col-12 col-lg-10">
@@ -227,15 +228,15 @@
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2759.7195854760753!2d6.115384779543845!3d46.23592087921985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c64883677ed5d%3A0x1fc51560423d7655!2sRte%20Fran%C3%A7ois-Peyrot%2030%2C%201218%20Le%20Grand-Saconnex%2C%20Suisse!5e0!3m2!1sfr!2sdz!4v1637703647859!5m2!1sfr!2sdz"
                             width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                        <p class="lead text-uppercase fw-bold bim-green-text mt-5">comment se rendre à
+                        <p class="section-title contact-titles mt-5">comment se rendre à
                             palexpo</p>
                         <div class="text-start">
                             <p class="lead">
-                                <strong>En voiture: </strong>
+                                <strong class="section-sub-title">En voiture: </strong>
                                 2800 places sont à la disposition de nos visiteurs et exposants sur le parking P12.
                             </p>
                             <p class="lead">
-                                <strong>En bus: </strong>
+                                <strong class="section-sub-title">En bus: </strong>
                                 vous pouvez également rejoindre Palexpo grâce aux nombreuses lignes de bus qui circulent
                                 dans Genève et ses environs
                             <ul>
@@ -251,7 +252,7 @@
                             </ul>
                             </p>
                             <p class="lead">
-                                <strong>En train: </strong>
+                                <strong class="section-sub-title">En train: </strong>
                                 Palexpo est à dix minutes à pieds de l’aéroport et de sa gare ferroviaire avec de
                                 nombreuses liaisons pour toute la Suisse (Genève en moins de 10 minutes, Lausanne en 40
                                 minutes et Zürich en moins de 3 heures). Accédez sans stress et sans bouchons à nos
@@ -269,50 +270,49 @@
     <!-- /Back to top -->
 
     <!--Footer-->
-    <footer class="footer mt-auto pt-5">
-        <div class="container pt-5">
-            <div class="row justify-content-center align-items-center text-center">
-                <hr class="prog-line w-100 mx-auto mb-5">
-                <p class="bim-green-text fw-bold fs-3 text-uppercase">newsletters</p>
-                <div class="col-lg-6 col-md-10 col-12 mb-5">
-                    <div class="input-group input-group-lg mb-3 mb-lg-0">
-                        <input class="form-control text-white rounded-0 bim-green-border bg-transparent" type="email"
-                            placeholder="VOTRE ADRESSE MAIL" aria-label="newsletter" id="newsletter_email">
-                        <button
-                            class="btn bim-green-bg text-white rounded-0 text-uppercase fw-bold d-flex align-items-center justify-content-center"
-                            type="submit" onclick="subscribetonewsletter()" title="S'inscrire">
-                            s'inscrire
-                            <i class="arrow-btn bi bi-forward-fill ms-2"></i>
-                        </button>
-                    </div>
-                    <p id="_subscribetonewsletterstatus" class="bim-green-text"></p>
-                </div>
-                <hr class="prog-line w-100 mx-auto mb-3">
-            </div>
-            <div class="row justify-content-center align-items-center mb-5">
-                <ul class="list-inline align-items-center text-center justify-content-center social-icons">
-                    <a class="text-decoration-none text-white me-5" target="_blank"
-                        href="https://twitter.com/bimdaygva">
-                        <li class="list-inline-item rounded-circle">
-                            <i class="fa fa-twitter mt-lg-2 mt-2"></i>
-                        </li>
-                    </a>
-                    <a class="text-decoration-none text-white me-5" target="_blank"
-                        href="https://www.linkedin.com/in/bim-day-gva-a97982190/?originalSubdomain=ch">
-                        <li class="list-inline-item rounded-circle">
-                            <i class="fa fa-linkedin mt-lg-2 mt-2"></i>
-                        </li>
-                    </a>
-                    <a class="text-decoration-none text-white" target="_blank"
-                        href="https://www.instagram.com/bimdaygva/">
-                        <li class="list-inline-item rounded-circle">
-                            <i class="fa fa-instagram mt-lg-2 mt-2"></i>
-                        </li>
-                    </a>
-                </ul>
-            </div>
+  <footer class="footer mt-auto pt-5">
+    <div class="container pt-5">
+      <div class="row justify-content-center align-items-center text-center">
+        <hr class="line w-100 mx-auto mb-5" />
+        <p class="section-title">newsletters</p>
+        <div class="col-lg-6 col-md-10 col-12 mb-5">
+          <div class="input-group input-group-lg input-group-newsletter mb-3 mb-lg-0">
+            <input class="form-control newsletter-form" type="email"
+              placeholder="VOTRE ADRESSE MAIL" aria-label="newsletter" id="newsletter_email" />
+            <button
+              class="btn button-green button-newsletter d-flex align-items-center 
+              justify-content-center"
+              type="submit" onclick="subscribetonewsletter()" title="S'inscrire">
+              s'inscrire
+              <i class="arrow-btn bi bi-forward-fill ms-2"></i>
+            </button>
+          </div>
+          <p id="_subscribetonewsletterstatus" class=""></p>
         </div>
-    </footer>
+        <hr class="line w-100 mx-auto mb-3" />
+      </div>
+      <div class="row justify-content-center align-items-center mb-5">
+        <ul class="list-inline align-items-center text-center justify-content-center social-icons">
+          <a class="text-decoration-none text-white me-5" target="_blank" href="https://twitter.com/bimdaygva">
+            <li class="list-inline-item rounded-circle">
+              <i class="fa fa-twitter mt-lg-2 mt-2"></i>
+            </li>
+          </a>
+          <a class="text-decoration-none text-white me-5" target="_blank"
+            href="https://www.linkedin.com/in/bim-day-gva-a97982190/?originalSubdomain=ch">
+            <li class="list-inline-item rounded-circle">
+              <i class="fa fa-linkedin mt-lg-2 mt-2"></i>
+            </li>
+          </a>
+          <a class="text-decoration-none text-white" target="_blank" href="https://www.instagram.com/bimdaygva/">
+            <li class="list-inline-item rounded-circle">
+              <i class="fa fa-instagram mt-lg-2 mt-2"></i>
+            </li>
+          </a>
+        </ul>
+      </div>
+    </div>
+  </footer>
 
 
     <script src="js/bootstrap.bundle.min.js"></script>

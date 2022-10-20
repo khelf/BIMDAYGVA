@@ -118,39 +118,54 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg bg-transparent" aria-label="Navigation">
-            <div class="container h-100 align-items-start">
-                <a class="navbar-brand mt-2" href="../index.html">
-                    <img src="../img/logo.png">
+        <nav class="navbar fixed-top navbar-expand-lg bg-transparent" aria-label="Navigation" id="navbar">
+          <div class="container h-100">
+            <div class="row mx-auto w-100 h-100">
+              <div class="col-lg-2 col-12 d-flex justify-content-between align-items-start">
+                <a href="../index.html" class="navbar-brand mt-2">
+                  <img id="logo" src="../img/logo.png">
                 </a>
-                <button class="mt-2 navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarBim" aria-controls="navbarBim" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon bim-toggle"></span>
+                <button class="mt-4 navbar-toggler navbar-dark collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarBim" aria-controls="navbarBim" aria-expanded="false" aria-label="Toggle navigation"
+                  id="nav-toggle">
+                  <span class="navbar-toggler-icon bim-toggle"></span>
                 </button>
-                <div class="collapse navbar-collapse mt-lg-5 mt-0" id="navbarBim">
-                    <ul class="menu-items navbar-nav mx-auto text-center align-items-center text-uppercase">
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold px-2" href="../index.html">accueil</a>
-                        </li>
-                        <div class="px-5 d-none d-lg-block"></div>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold px-2" href="../edition2.html">l'édition 2</a>
-                        </li>
-                        <div class="px-5 d-none d-lg-block"></div>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold px-2" href="../blog.html">blog</a>
-                        </li>
-                        <div class="px-5 d-none d-lg-block"></div>
-                        <li class="nav-item">
-                            <a class="nav-link fw-bold" href="../contact.html">contact</a>
-                        </li>
-                    </ul>
+              </div>
+              <div class="col-lg-10 col-12 d-flex align-items-center">
+                <div id="navbarBim" class="navbar-collapse my-auto justify-content-between collapse">
+                  <ul class="menu-items navbar-nav text-center text-uppercase mb-lg-0 mb-4 mx-auto">
+                    <li class="nav-item">
+                      <a class="nav-link fw-bold" href="../index.html">accueil</a>
+                    </li>
+                    <div class="px-3 d-none d-lg-block"></div>
+                    <li class="nav-item">
+                      <a class="nav-link fw-bold" href="../exposition.html">exposition</a>
+                    </li>
+                    <div class="px-3 d-none d-lg-block"></div>
+                    <li class="nav-item">
+                      <a class="nav-link fw-bold" href="../conference.html">conférence</a>
+                    </li>
+                    <div class="px-3 d-none d-lg-block"></div>
+                    <li class="nav-item">
+                      <a class="nav-link fw-bold" href="../blog.html">blog</a>
+                    </li>
+                    <div class="px-3 d-none d-lg-block"></div>
+                    <li class="nav-item">
+                      <a class="nav-link fw-bold" href="../contact.html">contact</a>
+                    </li>
+                  </ul>
+                  <div class="px-5 me-2 d-none d-lg-block"></div>
+                  <a href="../billetterie.html" target="_blank" class="mb-lg-0 mb-5 m-0 btn button 
+                    button-green nav-button">
+                    réservez votre pass
+                  </a>
                 </div>
-                <div class="mx-5 d-none d-lg-block"></div>
+              </div>
             </div>
+          </div>
         </nav>
     </header>
+
     <main>
         <div class="pt-5 pb-5"></div>
         <section class="pt-5 pb-5">
@@ -159,24 +174,29 @@
                     <div class="col-lg-10 col-12">
                         <div class="card contenu-article p-lg-5 p-3">
                             <div class="card-body">
-                                <p class="green-text text-uppercase fw-bold text-start lh-1 mt-lg-0 mt-4">blog > 1iere edition > Aline Isoz</p>
+                                <p class="green-text text-uppercase fw-bold text-start lh-1 mt-lg-0 mt-4">blog > 1iere
+                                    edition > Aline Isoz</p>
                                 <h1 class="blog-item-title text-uppercase text-center">
                                     La Digitalisation & Les Innovations
                                 </h1>
                                 <div class="row justify-content-center align-items-center mt-4">
                                     <div class="col-lg-10 col-12">
                                         <p class="blog-item-quote">
-                                            « Le numérique est un térritoire à explorer et un domaine qu'il faut remettre en
+                                            « Le numérique est un térritoire à explorer et un domaine qu'il faut
+                                            remettre en
                                             question. »
                                         </p>
                                         <p class="text-end fs-3 fw-bold">Aline ISOZ</p>
                                         <p class="blog-text">
-                                            L'innovation consiste à créer de la valeur pour les clients. Dans un contexte de
+                                            L'innovation consiste à créer de la valeur pour les clients. Dans un
+                                            contexte de
                                             digitalisation et d'innovation au sein des entreprises, les salariés doivent
                                             faire preuve
-                                            d’autonomie, d'intrapreneuriat, d’un esprit start up. Ils doivent challenger le
+                                            d’autonomie, d'intrapreneuriat, d’un esprit start up. Ils doivent challenger
+                                            le
                                             statu quo et
-                                            s’affranchir de la hiérarchie pour pouvoir se montrer innovants. Cependant, dans
+                                            s’affranchir de la hiérarchie pour pouvoir se montrer innovants. Cependant,
+                                            dans
                                             un pays
                                             comme la Suisse, traditionnellement militaire, s'affranchir des règles et de
                                             l'autorité
@@ -184,8 +204,10 @@
                                             créativité.
                                         </p>
                                         <p class="blog-item-quote">
-                                            « Une innovation est un produit ou un service qui crée une valeur ajoutée pour
-                                            l'utilisateur. La plupart font l'erreur d'être focalisés sur les outils alors
+                                            « Une innovation est un produit ou un service qui crée une valeur ajoutée
+                                            pour
+                                            l'utilisateur. La plupart font l'erreur d'être focalisés sur les outils
+                                            alors
                                             que le
                                             digital bouleverse avant tout les processus. »
                                         </p>
@@ -193,34 +215,45 @@
                                         <p class="blog-text">
                                             Le digital entraîne une révolution des mentalités et des postures dans les
                                             organisations.
-                                            Les méthodes de management doivent être adaptées, les entreprises doivent être
+                                            Les méthodes de management doivent être adaptées, les entreprises doivent
+                                            être
                                             accompagnées
-                                            dans la conduite du changement. Elles se doivent d'être agiles, cette méthode de
+                                            dans la conduite du changement. Elles se doivent d'être agiles, cette
+                                            méthode de
                                             management
                                             définit un cadre, une méthode et des règles.
                                         </p>
                                         <p class="blog-text">
-                                            Il existe deux manières d'appréhender l'innovation en entreprise : on peut soit
+                                            Il existe deux manières d'appréhender l'innovation en entreprise : on peut
+                                            soit
                                             identifier
                                             les moyens technologiques, humains et financiers qu'on a à disposition et se
                                             fixer des
-                                            objectifs, soit fixer des objectifs et y associer les ressources nécessaires.
+                                            objectifs, soit fixer des objectifs et y associer les ressources
+                                            nécessaires.
                                             L'innovation
-                                            est synonyme de risques, pour les analyser et les maîtriser, il est nécessaire
+                                            est synonyme de risques, pour les analyser et les maîtriser, il est
+                                            nécessaire
                                             de définir
-                                            les objectifs ainsi que les rôles et les responsabilités de l'équipe projet. Un
+                                            les objectifs ainsi que les rôles et les responsabilités de l'équipe projet.
+                                            Un
                                             lâcher-prise
-                                            est nécessaire, une remise en question de l'ordre établi et les équipes doivent
+                                            est nécessaire, une remise en question de l'ordre établi et les équipes
+                                            doivent
                                             disposer
-                                            d'une certaine latitude pour pouvoir innover. Il faut séquencer le projet global
+                                            d'une certaine latitude pour pouvoir innover. Il faut séquencer le projet
+                                            global
                                             en
-                                            plusieurs projets, avancer par étapes et pouvoir arrêter le projet si celui-ci
+                                            plusieurs projets, avancer par étapes et pouvoir arrêter le projet si
+                                            celui-ci
                                             ne répond pas
-                                            aux attentes. Le plus grand risque en terme d'innovation n'est-il pas de ne rien
+                                            aux attentes. Le plus grand risque en terme d'innovation n'est-il pas de ne
+                                            rien
                                             faire ?
                                         </p>
                                         <p class="blog-item-quote">
-                                            « Un bon plan executé violemment maintenant est mieux qu'un plan parfait executé
+                                            « Un bon plan executé violemment maintenant est mieux qu'un plan parfait
+                                            executé
                                             la
                                             semaine prochaine. »
                                         </p>
@@ -300,48 +333,47 @@
     <!--Footer-->
     <footer class="footer mt-auto pt-5">
         <div class="container pt-5">
-            <div class="row justify-content-center align-items-center text-center">
-                <hr class="prog-line w-100 mx-auto mb-5">
-                <p class="bim-green-text fw-bold fs-3 text-uppercase">newsletters</p>
-                <div class="col-lg-6 col-md-10 col-12 mb-5">
-                    <div class="input-group input-group-lg mb-3 mb-lg-0">
-                        <input class="form-control text-white rounded-0 bim-green-border bg-transparent" type="email"
-                            placeholder="VOTRE ADRESSE MAIL" aria-label="newsletter" id="newsletter_email">
-                        <button
-                            class="btn bim-green-bg text-white rounded-0 text-uppercase fw-bold d-flex align-items-center justify-content-center"
-                            type="submit" onclick="subscribetonewsletter()" title="S'inscrire">
-                            s'inscrire
-                            <i class="arrow-btn bi bi-forward-fill ms-2"></i>
-                        </button>
-                    </div>
-                    <p id="_subscribetonewsletterstatus" class="bim-green-text"></p>
-                </div>
-                <hr class="prog-line w-100 mx-auto mb-3">
+          <div class="row justify-content-center align-items-center text-center">
+            <hr class="line w-100 mx-auto mb-5" />
+            <p class="section-title">newsletters</p>
+            <div class="col-lg-6 col-md-10 col-12 mb-5">
+              <div class="input-group input-group-lg input-group-newsletter mb-3 mb-lg-0">
+                <input class="form-control newsletter-form" type="email"
+                  placeholder="VOTRE ADRESSE MAIL" aria-label="newsletter" id="newsletter_email" />
+                <button
+                  class="btn button-green button-newsletter d-flex align-items-center 
+                  justify-content-center"
+                  type="submit" onclick="subscribetonewsletter()" title="S'inscrire">
+                  s'inscrire
+                  <i class="arrow-btn bi bi-forward-fill ms-2"></i>
+                </button>
+              </div>
+              <p id="_subscribetonewsletterstatus" class=""></p>
             </div>
-            <div class="row justify-content-center align-items-center mb-5">
-                <ul class="list-inline align-items-center text-center justify-content-center social-icons">
-                    <a class="text-decoration-none text-white me-5" target="_blank"
-                        href="https://twitter.com/bimdaygva">
-                        <li class="list-inline-item rounded-circle">
-                            <i class="fa fa-twitter mt-lg-2 mt-2"></i>
-                        </li>
-                    </a>
-                    <a class="text-decoration-none text-white me-5" target="_blank"
-                        href="https://www.linkedin.com/in/bim-day-gva-a97982190/?originalSubdomain=ch">
-                        <li class="list-inline-item rounded-circle">
-                            <i class="fa fa-linkedin mt-lg-2 mt-2"></i>
-                        </li>
-                    </a>
-                    <a class="text-decoration-none text-white" target="_blank"
-                        href="https://www.instagram.com/bimdaygva/">
-                        <li class="list-inline-item rounded-circle">
-                            <i class="fa fa-instagram mt-lg-2 mt-2"></i>
-                        </li>
-                    </a>
-                </ul>
-            </div>
+            <hr class="line w-100 mx-auto mb-3" />
+          </div>
+          <div class="row justify-content-center align-items-center mb-5">
+            <ul class="list-inline align-items-center text-center justify-content-center social-icons">
+              <a class="text-decoration-none text-white me-5" target="_blank" href="https://twitter.com/bimdaygva">
+                <li class="list-inline-item rounded-circle">
+                  <i class="fa fa-twitter mt-lg-2 mt-2"></i>
+                </li>
+              </a>
+              <a class="text-decoration-none text-white me-5" target="_blank"
+                href="https://www.linkedin.com/in/bim-day-gva-a97982190/?originalSubdomain=ch">
+                <li class="list-inline-item rounded-circle">
+                  <i class="fa fa-linkedin mt-lg-2 mt-2"></i>
+                </li>
+              </a>
+              <a class="text-decoration-none text-white" target="_blank" href="https://www.instagram.com/bimdaygva/">
+                <li class="list-inline-item rounded-circle">
+                  <i class="fa fa-instagram mt-lg-2 mt-2"></i>
+                </li>
+              </a>
+            </ul>
+          </div>
         </div>
-    </footer>
+      </footer>
 
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/jquery-1.12.4.min.js"></script>
