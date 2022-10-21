@@ -5,7 +5,7 @@
   $(window).on('scroll', function () {
     var scroll = $(window).scrollTop();
     var wScroll = $(this).scrollTop();
-    if (scroll > 100 && $(window).width() > 991) {
+    if (scroll > 100) {
       $("#navbar").removeClass("bg-transparent").css("background-color", "#020d1f");
     } else {
       $("#navbar").addClass("bg-transparent")
