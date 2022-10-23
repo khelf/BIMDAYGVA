@@ -115,7 +115,7 @@ a:hover {
 
 .button-blue:active,
 .button-blue:hover,
-.button-blue:focus{
+.button-blue:focus {
   border: 2px solid #051746;
   background-color: transparent;
   color: #051746;
@@ -141,7 +141,8 @@ a:hover {
   color: #319e6e;
 }
 
-.nav-link:active, .nav-link:focus {
+.nav-link:active,
+.nav-link:focus {
   color: #319e6e;
 }
 
@@ -214,6 +215,7 @@ a:hover {
   color: #319e6e !important;
   opacity: 1;
 }
+
 .form-control:-ms-input-placeholder {
   color: #319e6e !important;
   opacity: 1;
@@ -223,18 +225,22 @@ a:hover {
   color: #319e6e !important;
   opacity: 1;
 }
+
 .form-control {
   caret-color: white;
 }
+
 .form-control {
   background-color: transparent;
   border: 2px solid #319e6e;
   color: #319e6e;
 }
+
 .form-control:focus {
   background-color: transparent;
   box-shadow: none;
 }
+
 /**************Carousel***********/
 .carousel-control-prev,
 .carousel-control-next {
@@ -364,6 +370,7 @@ a:hover {
 .modal-footer {
   border-top: none;
 }
+
 .modal-description {
   text-align: justify;
   height: 200px;
@@ -585,6 +592,7 @@ a:hover {
 #contactForm .form-control:focus {
   background-color: transparent !important;
 }
+
 .contact-titles {
   font-size: 4rem;
 }
@@ -608,7 +616,7 @@ a:hover {
 .select-selected:after {
   position: absolute;
   content: "";
-  top: 18px;
+  top: 20px;
   right: 15px;
   width: 0;
   height: 0;
@@ -618,7 +626,7 @@ a:hover {
 
 .select-selected.select-arrow-active:after {
   border-color: transparent transparent #319e6e transparent;
-  top: 7px;
+  top: 12px;
 }
 
 .select-items div,
@@ -660,6 +668,7 @@ a:hover {
   height: 3px;
   border: none;
 }
+
 .btn.button-newsletter {
   border-radius: 0px;
   font-family: "Barlow Bold";
@@ -679,6 +688,7 @@ a:hover {
   border-radius: 0px;
   font-family: "Barlow Bold";
 }
+
 .arrow-btn {
   line-height: 0;
   font-weight: bold;
@@ -753,15 +763,19 @@ a:hover {
   color: black;
   text-align: start;
 }
+
 .blog-item {
   border: 10px solid white !important;
 }
-.blog-item a .card-img-top{
+
+.blog-item a .card-img-top {
   border-radius: 20px;
 }
-.blog-item img{
+
+.blog-item img {
   width: 100%;
 }
+
 .blog-item-title {
   color: #051746;
   font-family: "Fugaz";
@@ -799,7 +813,8 @@ a:hover {
   transition: 0.5s;
   text-align: center;
 }
-.blog-item-suite-link h4{
+
+.blog-item-suite-link h4 {
   margin-top: 10px;
 }
 
@@ -817,12 +832,14 @@ a:hover {
 .btn-newsletter-input {
   width: 80%;
 }
+
 /***************page editions precedentes*************/
 .edition-img {
   width: 100%;
   border-radius: 20px;
   border: 4px solid white;
 }
+
 .edition-icon {
   width: 70px;
 }
@@ -835,15 +852,18 @@ a:hover {
   padding: 0;
   top: 11.2rem;
 }
+
 .not-found-fond {
   width: 35%;
   z-index: -1;
   right: 0;
   padding: 0;
 }
+
 .not-found-container {
   height: 100vh;
 }
+
 .not-found-title {
   font-size: 5rem;
 }
@@ -954,4 +974,3 @@ a:hover {
     height: 40vw;
   }
 }
-

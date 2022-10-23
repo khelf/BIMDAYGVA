@@ -212,7 +212,7 @@
         </section>
 
         <!--Devenir exposant section-->
-        <section class="inscription-exposant-section pt-5">
+        <section class="pt-5">
             <div class="container">
                 <div class="row mb-4 justify-content-center">
                     <div class="col-lg-10 col-12 mb-5 text-center">
@@ -229,7 +229,7 @@
                     </div>
                     <div class="col-lg-4 col-12 mb-2 text-center">
                         <a href=" https://docs.google.com/forms/d/e/1FAIpQLSfagbtfjw4QRMATCofQWm-0seiBqARZ_2wPo2y6BqFft3V_1Q/viewform?usp=sf_link"
-                         target="_blank" class="btn button button-green">
+                            target="_blank" class="btn button button-green">
                             JE DEVIENS EXPOSANT OU PARTENAIRE
                         </a>
                     </div>
@@ -237,8 +237,8 @@
             </div>
         </section>
 
-        <!--Partenaires section-->
-        <section class="partenaires-section pt-5 pb-5">
+        <!--Exposants section-->
+        <section class="pt-5 pb-5">
             <div class="container">
                 <div class="row mb-4">
                     <div class="col-12 mb-2 text-center">
@@ -252,7 +252,7 @@
                         <div class="card h-100 mb-2 bg-transparent" role="button" data-bs-toggle="modal"
                             data-bs-target="#expo1Modal">
                             <img class="card-img-top img-fluid conf-card-img-top"
-                                src="img/accueil/section-echanges/placeholder.jpg">
+                                src="img/exposition/exposants/apv.png">
                         </div>
                         <!-- Modal -->
                         <div class="modal fade" id="expo1Modal" tabindex="-1">
@@ -264,23 +264,20 @@
                                     <div class="modal-body">
                                         <div class="row justify-content-start align-items-center pe-5">
                                             <div class="col-lg-4 col-12 h-100">
-                                                <img src="img/accueil/section-echanges/placeholder.jpg"
-                                                    class="modal-expo-img mb-3">
+                                                <img src="img/exposition/exposants/apv.png" class="modal-expo-img mb-3">
                                                 <p class="modal-expo-info m-0">Site web:</p>
-                                                <a class="modal-expo-link" href="#" target="_blank">
-                                                    https://.......
+                                                <a class="modal-expo-link" href="https://atelierpoivrevert.ch/"
+                                                    target="_blank">
+                                                    https://atelierpoivrevert.ch/
                                                 </a>
                                             </div>
                                             <div class="col-lg-8 col-12 h-100">
-                                                <h3 class="modal-title-italic mb-4">NOM DE L'ENTREPRISE</h3>
+                                                <h3 class="modal-title-italic mb-4">Atelier Poivre Vert</h3>
                                                 <p class="small modal-description m-0">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                                                    enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                                                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                                                    culpa qui officia deserunt mollit anim id est laborum.
+                                                    Développement du BIM, Building Information Modeling .
+                                                    Relevé 3D avec LaserScanner des bâtiments existant puis création
+                                                    d'un modèle BIM
+                                                    Visites virtuelles.
                                                 </p>
                                             </div>
                                         </div>
@@ -696,7 +693,7 @@
                     <div class="col text-center mb-5">
                         <a class="text-decoration-none card h-100 mb-2 bg-transparent" href="https://www.mum.ch/"
                             target="_blank" title="Visiter le site web">
-                            <img class="card-img img-fluid conf-card-img-top" src="img/exposants/mensch.jpg">
+                            <img class="card-img img-fluid conf-card-img-top" src="img/partenaires/mensch.jpg">
                         </a>
                     </div>
                     <div class="col text-center mb-5">
@@ -738,49 +735,49 @@
     <!-- /Back to top -->
 
     <!--Footer-->
-  <footer class="footer mt-auto pt-5">
-    <div class="container pt-5">
-      <div class="row justify-content-center align-items-center text-center">
-        <hr class="line w-100 mx-auto mb-5" />
-        <p class="section-title">newsletters</p>
-        <div class="col-lg-6 col-md-10 col-12 mb-5">
-          <div class="input-group input-group-lg input-group-newsletter mb-3 mb-lg-0">
-            <input class="form-control newsletter-form" type="email"
-              placeholder="VOTRE ADRESSE MAIL" aria-label="newsletter" id="newsletter_email" />
-            <button
-              class="btn button-green button-newsletter d-flex align-items-center 
-              justify-content-center"
-              type="submit" onclick="subscribetonewsletter()" title="S'inscrire">
-              s'inscrire
-              <i class="arrow-btn bi bi-forward-fill ms-2"></i>
-            </button>
-          </div>
-          <p id="_subscribetonewsletterstatus" class=""></p>
+    <footer class="footer mt-auto pt-5">
+        <div class="container pt-5">
+            <div class="row justify-content-center align-items-center text-center">
+                <hr class="line w-100 mx-auto mb-5" />
+                <p class="section-title">newsletters</p>
+                <div class="col-lg-6 col-md-10 col-12 mb-5">
+                    <div class="input-group input-group-lg input-group-newsletter mb-3 mb-lg-0">
+                        <input class="form-control newsletter-form" type="email" placeholder="VOTRE ADRESSE MAIL"
+                            aria-label="newsletter" id="newsletter_email" />
+                        <button class="btn button-green button-newsletter d-flex align-items-center 
+              justify-content-center" type="submit" onclick="subscribetonewsletter()" title="S'inscrire">
+                            s'inscrire
+                            <i class="arrow-btn bi bi-forward-fill ms-2"></i>
+                        </button>
+                    </div>
+                    <p id="_subscribetonewsletterstatus" class=""></p>
+                </div>
+                <hr class="line w-100 mx-auto mb-3" />
+            </div>
+            <div class="row justify-content-center align-items-center mb-5">
+                <ul class="list-inline align-items-center text-center justify-content-center social-icons">
+                    <a class="text-decoration-none text-white me-5" target="_blank"
+                        href="https://twitter.com/bimdaygva">
+                        <li class="list-inline-item rounded-circle">
+                            <i class="fa fa-twitter mt-lg-2 mt-2"></i>
+                        </li>
+                    </a>
+                    <a class="text-decoration-none text-white me-5" target="_blank"
+                        href="https://www.linkedin.com/in/bim-day-gva-a97982190/?originalSubdomain=ch">
+                        <li class="list-inline-item rounded-circle">
+                            <i class="fa fa-linkedin mt-lg-2 mt-2"></i>
+                        </li>
+                    </a>
+                    <a class="text-decoration-none text-white" target="_blank"
+                        href="https://www.instagram.com/bimdaygva/">
+                        <li class="list-inline-item rounded-circle">
+                            <i class="fa fa-instagram mt-lg-2 mt-2"></i>
+                        </li>
+                    </a>
+                </ul>
+            </div>
         </div>
-        <hr class="line w-100 mx-auto mb-3" />
-      </div>
-      <div class="row justify-content-center align-items-center mb-5">
-        <ul class="list-inline align-items-center text-center justify-content-center social-icons">
-          <a class="text-decoration-none text-white me-5" target="_blank" href="https://twitter.com/bimdaygva">
-            <li class="list-inline-item rounded-circle">
-              <i class="fa fa-twitter mt-lg-2 mt-2"></i>
-            </li>
-          </a>
-          <a class="text-decoration-none text-white me-5" target="_blank"
-            href="https://www.linkedin.com/in/bim-day-gva-a97982190/?originalSubdomain=ch">
-            <li class="list-inline-item rounded-circle">
-              <i class="fa fa-linkedin mt-lg-2 mt-2"></i>
-            </li>
-          </a>
-          <a class="text-decoration-none text-white" target="_blank" href="https://www.instagram.com/bimdaygva/">
-            <li class="list-inline-item rounded-circle">
-              <i class="fa fa-instagram mt-lg-2 mt-2"></i>
-            </li>
-          </a>
-        </ul>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-1.12.4.min.js"></script>
