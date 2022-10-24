@@ -785,11 +785,10 @@ a:hover {
 .blog-item-quote {
   text-align: start;
   color: #2a8a60;
-  font-style: italic;
   line-height: 1.2;
   font-size: 1.5rem;
   text-transform: uppercase;
-  font-weight: 900;
+  font-family: "Fugaz";
 }
 
 .similar {
