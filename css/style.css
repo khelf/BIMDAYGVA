@@ -602,7 +602,7 @@ a:hover {
   position: relative;
   font-family: inherit;
   border: 2px solid #319e6e;
-  border-radius: 5px;
+  border-radius: 0.5rem;
 }
 
 .custom-select select {
@@ -865,6 +865,110 @@ a:hover {
 
 .not-found-title {
   font-size: 5rem;
+}
+
+/***************page conference*************/
+
+.conf-time {
+  font-family: "Fugaz";
+  text-transform: uppercase;
+  color: #319e6e
+}
+
+.conf-name {
+  font-family: "Barlow Bold";
+  margin: 0;
+}
+
+.conf-social {
+  height: 50px;
+  width: 50px;
+  border: 2px solid white;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.conf-social i {
+  font-size: 30px;
+}
+
+.conf-social:hover {
+  border-color: #319e6e;
+  background-color: #319e6e;
+}
+
+.conf-hachtag {
+  color: #319e6e;
+}
+
+.conf-bio {
+  text-align: justify;
+}
+
+.conf-img {
+  width: 150px;
+}
+
+/*********page formulaire************/
+.checkbox-container {
+  width: 50px;
+}
+
+.checkbox-container .form-check-input {
+  border-radius: 0px;
+  border: 8px solid white;
+  box-shadow: none;
+  height: 45px;
+  width: 40px;
+}
+
+.checkbox-container .form-check-input:checked {
+  box-shadow: none;
+  border: 8px solid #319e6e;
+  color: #319e6e;
+}
+
+.objectif-checkbox-container .form-check-input {
+  border-radius: 0px;
+  border: 2px solid #319e6e;
+  box-shadow: none;
+}
+
+.objectif-checkbox-container .form-check-input:checked {
+  background-color: #319e6e !important;
+  border: 2px solid #319e6e;
+  color: #fff;
+}
+
+.objectif-container {
+  position: absolute;
+  width: 100%;
+  background-color: #051c53;
+  border-radius: .5rem;
+  border: 2px solid #319e6e;
+  z-index: 1000;
+}
+
+.objectif-container p {
+  color: #319e6e;
+  font-size: 1.3rem;
+}
+
+.objectif-toggle {
+  text-transform: uppercase;
+  background-color: transparent;
+  min-height: calc(1.5em + 1rem + 2px);
+  padding: .5rem 1rem;
+  font-size: 1.25rem;
+  border-radius: .5rem;
+  border: 2px solid #319e6e;
+  color: #319e6e;
+}
+
+.objectif-toggle p {
+  color: #319e6e;
 }
 
 /*********responsive************/
