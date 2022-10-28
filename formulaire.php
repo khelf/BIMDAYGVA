@@ -19,7 +19,7 @@ isset($Phone) && isset($Taille) && isset($Objectifs) && preg_match("^[_a-z0-9-]+
  echo 'Sent';
  
   $to = "maxime@bimdaygva.ch; audrey@bimdaygva.ch";
-  $to = "khelf_mohamed@yahoo.fr"; 
+  /*$to = "khelf_mohamed@yahoo.fr";*/ 
 
  $subject = "Formulaire de participation au BIM DAY GVA";
  $txt = "Bonjour vous avez reçu un message depuis votre formulaire de participation au BIM DAY GVA \r\n"
@@ -34,8 +34,8 @@ isset($Newsletter) &&
  !empty($Email) &&
   isset($Email) && 
   preg_match("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$^",$Email)){
-    // $to = "contact@bimdaygva.ch";
-    $to = "khelf_mohamed@yahoo.fr";
+    $to = "contact@bimdaygva.ch";
+    /*$to = "khelf_mohamed@yahoo.fr";*/
     $subject = "NewsLetter inscription";
     $txt = "NewsLetter inscription \r\n"
     ."Email : ".$Email."\r\n";
