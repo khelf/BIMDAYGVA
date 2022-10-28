@@ -1,4 +1,5 @@
 function sendform() {
+  console.log("sending...")
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function () {
     if (this.readyState == 4 && this.status == 200) {
@@ -9,6 +10,11 @@ function sendform() {
         document.getElementById("form_lastname").value = "";
         document.getElementById("form_email").value = "";
         document.getElementById("form_phone").value = "";
+        document.getElementById("objectif1").checked = false;
+        document.getElementById("objectif2").checked = false;
+        document.getElementById("objectif3").checked = false;
+        document.getElementById("objectif4").checked = false;
+        document.getElementById("form_taille_entreprise").value = "";
         document.getElementById("_sendformstatus").innerHTML = "Nous avons reçu votre requete, merci de nous avoir contacté. Nous vous répondrons dans les plus brefs délais.";
       } else { document.getElementById("_sendformstatus").innerHTML = "veuillez vérifier vos informations"; }
       document.getElementById("_sendform").disabled = false;
@@ -27,10 +33,10 @@ function sendform() {
   var email = document.getElementById("form_email").value;
   var phone = document.getElementById("form_phone").value;
   var _objectifs = [];
-  if (document.getElementById("objectif1").checked) _objectifs.push('option1 selected');
-  if (document.getElementById("objectif2").checked) _objectifs.push('option2 selected');
-  if (document.getElementById("objectif3").checked) _objectifs.push('option3 selected');
-  if (document.getElementById("objectif4").checked) _objectifs.push('option4 selected');
+  if (document.getElementById("objectif1").checked) _objectifs.push("Apporter de la visibilité à votre service/produit");
+  if (document.getElementById("objectif2").checked) _objectifs.push("Assurer le développement de votre entreprise");
+  if (document.getElementById("objectif3").checked) _objectifs.push("Renforcer votre image d'expert");
+  if (document.getElementById("objectif4").checked) _objectifs.push("S'exprimer sur vos réalisationss d'envergures");
 var objectifs = _objectifs.join(', ');
 console.log("objectifs", _objectifs)
   var state = false;
@@ -48,12 +54,34 @@ console.log("objectifs", _objectifs)
 
 }
 
-function validateForm() {
+function _validateForm() {
   if (document.getElementById("form_entreprise").value == "") return false;
   if (document.getElementById("form_firstname").value == "") return false;
   if (document.getElementById("form_lastname").value == "") return false;
   if (document.getElementById("form_phone").value == "") return false;
+  if (document.getElementById("form_taille_entreprise").value == "") return false;
+
   var email = document.getElementById("form_email").value;
   var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return re.test(String(email).toLowerCase());
+}
+
+function validateForm () {
+  console.log("validating...")
+  var valid = true;
+  console.log("valid", valid)
+  valid &= document.getElementById("form_entreprise").value !== "";
+  console.log("valid", valid)
+
+  valid &= document.getElementById("form_firstname").value !== "";
+  valid &= document.getElementById("form_lastname").value !== "";
+  valid &= document.getElementById("form_phone").value !== "";
+  var objectif1 = document.getElementById("objectif1").checked;
+  var objectif2 = document.getElementById("objectif2").checked;
+  var objectif3 = document.getElementById("objectif3").checked;
+  var objectif4 = document.getElementById("objectif4").checked;
+  var taille = document.getElementById("form_taille_entreprise").value;
+  valid &= (objectif1 || objectif2 || objectif3 || objectif4) && !!taille;
+  document.getElementById("_sendform").disabled = !valid;
+  return valid
 }

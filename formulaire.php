@@ -1,28 +1,27 @@
 <?php
- $Category =$_GET['category'];
+ $Entreprise =$_GET['entreprise'];
  $Firstname= $_GET['firstname'];
  $Lastname= $_GET['lastname'];
  $Email = $_GET['email'];
- $Message = $_GET['message'];
+ $Phone = $_GET['phone'];
+ $Taille = $_GET['taille'];
+ $Objectifs = $_GET['objectifs'];
+
  $IP_Adress = $_SERVER['REMOTE_ADDR'];
 
- if(!empty($Category) && !empty($Firstname) && !empty($Lastname) 
- && !empty($Email) && !empty($Message) &&
-isset($Category) && isset($Firstname) && isset($Lastname) && isset($Email) &&     
-isset($Message) && preg_match("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$^",$Email)){
+ if(!empty($Entreprise) && !empty($Firstname) && !empty($Lastname) 
+ && !empty($Email) && !empty($Phone) && !empty($Taille) && !empty($Objectifs) && 
+isset($Entreprise) && isset($Firstname) && isset($Lastname) && isset($Email) &&     
+isset($Phone) && isset($Taille) && isset($Objectifs) && preg_match("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$^",$Email)){
  echo 'Sent';
  
- /* $to = "khelf_mohamed@yahoo.fr"; */
- $to = "maxime@bimdaygva.ch";
- if(strcmp($Category, "Partenaire") == 0 || strcmp($Category, "Exposant") == 0){
+  $to = "maxime@bimdaygva.ch; audrey@bimdaygva.ch";
+  $to = "khelf_mohamed@yahoo.fr"; 
 
-  $to="audrey@bimdaygva.ch";
-  /* $to="khelf_mohamed@yahoo.fr"; */
- }                                      
- $subject = "Formulaire de contact (site)";
- $txt = "Bonjour vous avez reçu un message depuis votre formulaire de contact \r\n"
+ $subject = "Formulaire de participation au BIM DAY GVA";
+ $txt = "Bonjour vous avez reçu un message depuis votre formulaire de participation au BIM DAY GVA \r\n"
  ."Email : ".$Email."\r\n"
- ."Catégorie: ".$Category."\r\n"."Nom: ".$Firstname."\r\n"."Prénom: ".$Lastname."\r\n"."Message: ".$Message."\r\n";
+ ."Entreprise: ".$Entreprise."\r\n"."Nom: ".$Lastname."\r\n"."Prénom: ".$Firstname."\r\n"."Téléphone: ".$Phone."\r\n"."Taille de l'entreprise: ".$Taille."\r\n"."Objectifs: ".$Objectifs."\r\n";
  $headers = "For: webmaster@bimdaygva.ch";
      mail($to,$subject,$txt,$headers);
 }else echo 'Error';

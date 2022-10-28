@@ -4,7 +4,7 @@
 
 <head prefix="website: http://ogp.me/ns/website#">
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- <script
+  <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=UA-149901931-1"
     ></script>
@@ -16,7 +16,7 @@
       gtag("js", new Date());
 
       gtag("config", "UA-149901931-1");
-    </script> -->
+    </script>
 
   <!-- Required meta tags -->
   <meta charset="utf-8" />
@@ -31,7 +31,7 @@
 
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-  <!-- <base href="https://www.bimdaygva.ch/blog.html" />
+  <base href="https://www.bimdaygva.ch/blog.html" />
 
     <meta
       name="viewport"
@@ -112,7 +112,7 @@
 
     <meta property="og:url" content="https://www.bimdaygva.ch/blog.html" />
 
-    <meta property="og:site_name" content="BIM DAY GVA" /> -->
+    <meta property="og:site_name" content="BIM DAY GVA" />
 
   <!-- <link rel="manifest" href="site.webmanifest"> -->
   <link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
@@ -244,12 +244,12 @@
 
                 <div class="col mb-5">
                   <div class="card h-100 blog-item">
-                    <a href="blog/retour-dexperience-de-coordination-bim-par-beletec.html">
+                    <a href="blog/retour-d-experience-de-coordination-bim-par-beletec.html">
                       <img class="card-img-top" src="img/blog/betelec.jpg" />
                     </a>
                     <div class="card-body d-flex flex-column justify-content-between">
                       <div>
-                        <a  href="blog/retour-dexperience-de-coordination-bim-par-beletec.html">
+                        <a  href="blog/retour-d-experience-de-coordination-bim-par-beletec.html">
                           <h4 class="card-title blog-item-title">
                             RETOUR D&#39;EXPÉRIENCE DE COORDINATION BIM ET
                             PRÉSENTATION D&#39;UNE MAQUETTE DE PROTECTION INCENDIE
@@ -263,7 +263,7 @@
                           électricité. L’entreprise comporte cinq agences...
                         </p>
                       </div>
-                      <a href="blog/retour-dexperience-de-coordination-bim-par-beletec.html" 
+                      <a href="blog/retour-d-experience-de-coordination-bim-par-beletec.html" 
                         class="blog-item-suite-link">
                         <h4>
                           Lire plus
@@ -340,12 +340,12 @@
 
                 <div class="col mb-5">
                   <div class="card blog-item h-100">
-                    <a href="blog/Le-BIM-a-l-etat-de-Genève-par-Ophelie-Vincendon.html">
+                    <a href="blog/le-bim-a-l-etat-de-geneve-par-ophelie-vincendon.html">
                       <img class="card-img-top img-fluid" src="img/blog/vincendon.jpg" />
                     </a>
                     <div class="card-body d-flex flex-column justify-content-between">
                       <div>
-                        <a href="blog/Le-BIM-a-l-etat-de-Genève-par-Ophelie-Vincendon.html">
+                        <a href="blog/le-bim-a-l-etat-de-geneve-par-ophelie-vincendon.html">
                           <h4 class="card-title blog-item-title">
                             L’avancement des dépôts d’autorisation de construire BIM à
                             l’Etat de Genève
@@ -359,7 +359,7 @@
                           données, les bases légales
                         </p>
                       </div>
-                      <a href="blog/Le-BIM-a-l-etat-de-Genève-par-Ophelie-Vincendon.html"
+                      <a href="blog/le-bim-a-l-etat-de-geneve-par-ophelie-vincendon.html"
                         class="blog-item-suite-link">
                         <h4>
                           Lire plus
@@ -921,39 +921,6 @@
 
   <script src="js/main.js"></script>
 
-  <script>
-    function adjustImage(imgRef, ratioLG, ratioXL) {
-      const bgh = "auto 100%";
-      if (window.innerWidth >= 992) {
-        if (window.innerWidth < 1200) {
-          imgRef.style.backgroundSize = bgh;
-          if (ratioLG)
-            imgRef.style.height = `${imgRef.clientWidth * ratioLG}px`;
-        } else {
-          imgRef.style.backgroundSize = bgh;
-          if (ratioXL)
-            imgRef.style.height = `${imgRef.clientWidth * ratioXL}px`;
-        }
-      }
-    }
-    function fixImages() {
-      const articlesImages = document.querySelectorAll(".article");
-      const ratiosXL = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
-      const ratiosLG = [
-        1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5, 1.5,
-      ];
-      for (let i = 0; i < articlesImages.length; i++) {
-        console.log(articlesImages.length);
-        adjustImage(articlesImages[i], ratiosLG[i], ratiosXL[i]);
-      }
-    }
-    window.onload = () => {
-      fixImages();
-    };
-    window.onresize = () => {
-      fixImages();
-    };
-  </script>
 </body>
 
 </html>

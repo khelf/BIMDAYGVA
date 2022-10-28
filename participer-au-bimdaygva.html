@@ -5,23 +5,23 @@
 <head prefix="website: http://ogp.me/ns/website#">
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149901931-1"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149901931-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
 
         gtag('config', 'UA-149901931-1');
-    </script> -->
+    </script>
 
   <!-- Required meta tags -->
   <meta charset="utf-8">
 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>BIM DAY GVA | Participez au BIM DAY GVA</title>
+  <title>BIM DAY GVA | Participer au BIM DAY GVA</title>
 
-  <!-- <link rel="canonical" href="https://www.bimdaygva.ch/participer-au-bimdaygva.html">
+  <link rel="canonical" href="https://www.bimdaygva.ch/participer-au-bimdaygva.html">
 
     <meta charset="utf-8" />
 
@@ -95,7 +95,7 @@
 
     <meta property="og:url" content="https://www.bimdaygva.ch/participer-au-bimdaygva.html">
 
-    <meta property="og:site_name" content="BIM DAY GVA"> -->
+    <meta property="og:site_name" content="BIM DAY GVA">
 
   <!-- <link rel="manifest" href="site.webmanifest"> -->
   <link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
@@ -111,9 +111,9 @@
 
   <style>
     .select-selected:before {
-  content: "*";
-  color: red;
-}
+      content: "*";
+      color: red;
+    }
   </style>
 
 </head>
@@ -153,7 +153,7 @@
                   <a class="nav-link fw-bold" href="blog.html">blog</a>
                 </li>
                 <div class="px-3 d-none d-lg-block"></div>
-                <li class="nav-item active">
+                <li class="nav-item">
                   <a class="nav-link fw-bold" href="contact.html">contact</a>
                 </li>
               </ul>
@@ -179,132 +179,134 @@
             <h1 class="section-title">Participez au BIM DAY GVA</h1>
           </div>
         </div>
-        <div class="row g-3 justify-content-center align-items-center" id="contactForm"
-          novalidate="novalidate">
+        <div class="row g-3 justify-content-center align-items-center" id="contactForm" 
+        novalidate="novalidate">
           <div class="col-lg-10 col-12">
-            <input type="text" class="form-control form-control-lg"
-            id="form_entreprise" placeholder="ENTREPRISE">
+            <input type="text" class="form-control form-control-lg" id="form_entreprise" 
+            placeholder="ENTREPRISE" onchange="validateForm()">
           </div>
           <div class="col-lg-5 col-12">
-            <input type="text" class="form-control form-control-lg" id="form_firstname" placeholder="PRÉNOM">
+            <input type="text" class="form-control form-control-lg" id="form_firstname" 
+            placeholder="PRÉNOM" onchange="validateForm()">
           </div>
           <div class="col-lg-5 col-12">
-            <input type="text" class="form-control form-control-lg" id="form_lastname" placeholder="NOM">
+            <input type="text" class="form-control form-control-lg" id="form_lastname" 
+            placeholder="NOM" onchange="validateForm()">
           </div>
           <div class="col-12 col-lg-10">
-            <input type="email" class="form-control form-control-lg"
-            id="form_email" placeholder="ADRESSE MAIL">
+            <input type="email" class="form-control form-control-lg" id="form_email" 
+            placeholder="ADRESSE MAIL" onchange="validateForm()">
           </div>
           <div class="col-12 col-lg-10">
-            <input type="number" class="form-control form-control-lg" id="form_phone" placeholder="NUMERO DE TELEPHONE">
+            <input type="number" class="form-control form-control-lg" id="form_phone" 
+            placeholder="NUMERO DE TELEPHONE" onchange="validateForm()">
           </div>
           <div class="col-12 col-lg-10">
             <div class="custom-select">
               <select class="form-select form-select-lg" aria-label="Taille de l'entreprise" 
-              id="form_taille_entreprise">
-                <option value="Vide required-field">TAILLE DE L'ENTREPRISE: </p></option>
-                <option value="5personnes">Entre 1 et 5 personnes</option>
-                <option value="25personnes">Entre 6 et 25 personnes</option>
-                <option value="50personnes">Entre 26 et 50 personnes</option>
-                <option value="100personnes">Entre 51 et 100 personnes</option>
-                <option value="250personnes">Entre 100 et 250 personnes</option>
-                <option value="plus250">Plus de 250 personnes</option>
+              id="form_taille_entreprise" onmouseenter="validateForm()" onmouseleave="validateForm()">
+                <option value="" class="required-field">TAILLE DE L'ENTREPRISE: </p>
+                </option>
+                <option value="Entre 1 et 5 personnes">Entre 1 et 5 personnes</option>
+                <option value="Entre 6 et 25 personnes">Entre 6 et 25 personnes</option>
+                <option value="Entre 26 et 50 personnes">Entre 26 et 50 personnes</option>
+                <option value="Entre 51 et 100 personnes">Entre 51 et 100 personnes</option>
+                <option value="Entre 100 et 250 personnes">Entre 100 et 250 personnes</option>
+                <option value="Plus de 250 personnes">Plus de 250 personnes</option>
               </select>
             </div>
           </div>
           <div class="col-12 col-lg-10 mb-4">
-            <div class="w-100 position-relative">
+            <div class="w-100" id="objectif-wrapper">
               <div id="objectif-toggle" role="button"
-              class="d-flex justify-content-between align-items-center objectif-toggle">
-               <p class="m-0" id="objectifs">
-                 QUELS SONT VOS OBJECTIFS POUR BIM DAY GVA 2023 ? 
-               </p>
-               <i class="fa fa-caret-down"></i>
-             </div>
-             <div class="objectif-container d-none p-3" id="objectif-container">
-               <div class="d-flex justify-content-start align-items-center w-100 mb-3">
-                 <div class="objectif-checkbox-container">
-                   <input class="form-check-input bg-transparent me-3" type="checkbox"
-                   value="Apporter de la visibilité à votre service/produit" id="objectif1"
-                   onchange="getObjectif1(event)">
-                 </div>
-                 <div class="flex-grow-1">
-                   <p class="my-auto">
-                     Apporter de la visibilité à votre service/produit
-                   </p>
-                 </div>
-               </div>
-               <div class="d-flex justify-content-start align-items-center w-100 mb-3">
-                 <div class="objectif-checkbox-container">
-                   <input class="form-check-input bg-transparent me-3" type="checkbox" 
-                   value="Assurer le développement de votre entreprise" id="objectif2">
-                 </div>
-                 <div class="flex-grow-1">
-                   <p class="my-auto">
-                     Assurer le développement de votre entreprise
-                   </p>
-                 </div>
-               </div>
-               <div class="d-flex justify-content-start align-items-center w-100 mb-3">
-                 <div class="objectif-checkbox-container">
-                   <input class="form-check-input bg-transparent me-3" type="checkbox" 
-                   value="Renforcer votre image d'expert" id="objectif3">
-                 </div>
-                 <div class="flex-grow-1">
-                   <p class="my-auto">
-                     Renforcer votre image d'expert
-                   </p>
-                 </div>
-               </div>
-               <div class="d-flex justify-content-start align-items-center w-100 mb-3">
-                 <div class="objectif-checkbox-container">
-                   <input class="form-check-input bg-transparent me-3" type="checkbox" 
-                   value="S'exprimer sur vos réalisationss d'envergures" id="objectif4">
-                 </div>
-                 <div class="flex-grow-1">
-                   <p class="my-auto">
-                     S'exprimer sur vos réalisationss d'envergures
-                   </p>
-                 </div>
-               </div>
-             </div>
+                class="d-flex justify-content-between align-items-center objectif-toggle">
+                <p class="m-0" id="objectifs">
+                  <strong style="color:red">*</strong>QUELS SONT VOS OBJECTIFS POUR BIM DAY GVA 2023 ?
+                </p>
+                <i class="fa fa-caret-down"></i>
+              </div>
+              <div class="objectif-container d-none p-3" id="objectif-container">
+                <div class="d-flex justify-content-start align-items-center w-100 mb-3">
+                  <div class="objectif-checkbox-container">
+                    <input class="form-check-input bg-transparent me-3" type="checkbox" id="objectif1"
+                      onchange="validateForm()">
+                  </div>
+                  <div class="flex-grow-1">
+                    <p class="my-auto">
+                      Apporter de la visibilité à votre service/produit
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-start align-items-center w-100 mb-3">
+                  <div class="objectif-checkbox-container">
+                    <input class="form-check-input bg-transparent me-3" type="checkbox" id="objectif2"
+                      onchange="validateForm()">
+                  </div>
+                  <div class="flex-grow-1">
+                    <p class="my-auto">
+                      Assurer le développement de votre entreprise
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-start align-items-center w-100 mb-3">
+                  <div class="objectif-checkbox-container">
+                    <input class="form-check-input bg-transparent me-3" type="checkbox" 
+                    id="objectif3" onchange="validateForm()">
+                  </div>
+                  <div class="flex-grow-1">
+                    <p class="my-auto">
+                      Renforcer votre image d'expert
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-start align-items-center w-100 mb-3">
+                  <div class="objectif-checkbox-container">
+                    <input class="form-check-input bg-transparent me-3" type="checkbox"
+                     id="objectif4" onchange="validateForm()">
+                  </div>
+                  <div class="flex-grow-1">
+                    <p class="my-auto">
+                      S'exprimer sur vos réalisationss d'envergures
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-            
+
           </div>
           <div class="col-12 col-lg-3">
             <button type="submit" name="" id="_sendform" value="Envoyer"
-            class="btn btn-lg button button-green w-100 rounded-3"
+              class="btn btn-lg button button-green w-100 rounded-3" disabled 
               onclick="sendform()">ENVOYER</button>
           </div>
           <div class="col-12 col-lg-10">
-            <span class="bim-green-text" id="_sendmessagestatus"></span>
+            <span class="bim-green-text" id="_sendformstatus"></span>
           </div>
           <div class="col-12 col-lg-10">
             <div class="d-flex justify-content-start align-items-center w-100 mb-3">
               <div class="checkbox-container">
-                <input class="form-check-input bg-transparent me-3" type="checkbox" value=""
-                id="credibility">
+                <input class="form-check-input bg-transparent me-3" type="checkbox" value="" id="credibility">
               </div>
               <div class="flex-grow-1">
                 <p class="my-auto small">
-                  En soumettant ce formulaire, j’accepte que mes informations soient utilisées 
+                  En soumettant ce formulaire, j’accepte que mes informations soient utilisées
                   exclusivement dans le cadre de ma
-                  demande et de la relation commerciale éthique et personnalisée qui pourrait en découler si je le souhaite. (Obligatoire)
+                  demande et de la relation commerciale éthique et personnalisée qui pourrait en découler si je le
+                  souhaite. (Obligatoire)
                 </p>
               </div>
             </div>
 
             <div class="d-flex justify-content-start align-items-center w-100 terms mb-3">
               <div class="checkbox-container">
-                <input class="form-check-input bg-transparent me-3" type="checkbox" value=""
-                id="optin">
+                <input class="form-check-input bg-transparent me-3" type="checkbox" value="" id="optin">
               </div>
-            <div class="flex-grow-1">
-              <p class="my-auto small">
-                En cochant cette case, je m'inscris à la newsletter BIM DAY GVA.
-              </p>
+              <div class="flex-grow-1">
+                <p class="my-auto small">
+                  En cochant cette case, je m'inscris à la newsletter BIM DAY GVA.
+                </p>
+              </div>
             </div>
-          </div>
           </div>
 
         </div>
@@ -386,6 +388,7 @@
       /*for each element, create a new DIV that will contain the option list:*/
       b = document.createElement("DIV");
       b.setAttribute("class", "select-items select-hide");
+      b.onclick = () => validateForm();
       for (j = 1; j < ll; j++) {
         /*for each option in the original select element,
         create a new DIV that will act as an option item:*/
@@ -452,15 +455,22 @@
   </script>
 
   <script>
-     $('#objectif-toggle').on('click', function () {
-       if ( $('#objectif-container').hasClass("d-none")) {
+
+    $('#objectif-toggle').on('click', function () {
+      if ($('#objectif-container').hasClass("d-none")) {
         $('#objectif-container').removeClass("d-none");
         $('#objectif-container').addClass("d-block");
-       } else {
+      } else {
         $('#objectif-container').removeClass("d-block");
         $('#objectif-container').addClass("d-none");
-       }
-     })
+      }
+    })
+
+    $('#objectif-wrapper').on('mouseleave', function () {
+        $('#objectif-container').removeClass("d-block");
+        $('#objectif-container').addClass("d-none");
+    })
+    
   </script>
 
 </body>
