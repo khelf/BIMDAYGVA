@@ -6,8 +6,11 @@
  $Phone = $_GET['phone'];
  $Taille = $_GET['taille'];
  $Objectifs = $_GET['objectifs'];
+ $Newsletter = $_GET['newsletter'];
 
  $IP_Adress = $_SERVER['REMOTE_ADDR'];
+
+// var_dump($_GET);
 
  if(!empty($Entreprise) && !empty($Firstname) && !empty($Lastname) 
  && !empty($Email) && !empty($Phone) && !empty($Taille) && !empty($Objectifs) && 
@@ -25,4 +28,19 @@ isset($Phone) && isset($Taille) && isset($Objectifs) && preg_match("^[_a-z0-9-]+
  $headers = "For: webmaster@bimdaygva.ch";
      mail($to,$subject,$txt,$headers);
 }else echo 'Error';
+
+if(!empty($Newsletter) && ($Newsletter == "true") &&
+isset($Newsletter) &&
+ !empty($Email) &&
+  isset($Email) && 
+  preg_match("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$^",$Email)){
+    // $to = "contact@bimdaygva.ch";
+    $to = "khelf_mohamed@yahoo.fr";
+    $subject = "NewsLetter inscription";
+    $txt = "NewsLetter inscription \r\n"
+    ."Email : ".$Email."\r\n";
+    $headers = "For: webmaster@bimdaygva.ch";
+        mail($to,$subject,$txt,$headers);
+}
+
 ?>

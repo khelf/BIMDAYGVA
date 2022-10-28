@@ -82,7 +82,6 @@ a:hover {
   padding: 8px 15px;
   font-weight: bold;
 }
-
 .button:active,
 .button:hover,
 .button:focus {
@@ -90,7 +89,7 @@ a:hover {
   animation-duration: .3s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-direction: alternate
+  animation-direction: alternate;
 }
 
 .button-green {
@@ -106,6 +105,7 @@ a:hover {
   background-color: transparent;
   color: #319e6e;
 }
+
 
 .button-blue {
   border: 2px solid #051746;
