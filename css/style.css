@@ -177,11 +177,49 @@ a:hover {
   line-height: 0.9;
 }
 
+.hero-title {
+  font-family: "Fugaz";
+  text-transform: uppercase;
+  font-size: 6rem;
+  line-height: 0.9;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: -webkit-linear-gradient(#00a86a, #034a4c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-title-shadow {
+  font-family: "Fugaz";
+  text-transform: uppercase;
+  font-size: 6rem;
+  line-height: 0.9;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  text-shadow: 1px 1px 0 white,
+    -1px -1px 0 white,
+    -6px 1px 0 #020f29,
+    -8px 1px 0 white,
+    -8px 1px 0 white,
+    -8px -1px 0 white;
+}
+
+
 .event-infos {
   font-family: "Barlow Bold";
   text-transform: uppercase;
   font-size: 5rem;
-  line-height: 0.8;
+  line-height: 0.9;
+}
+
+.hero-logo {
+  width: 150px;
 }
 
 .section-title {
@@ -208,6 +246,28 @@ a:hover {
   line-height: 0.8;
   font-size: 1.45rem;
   color: #319e6e
+}
+
+.section-text {
+  font-family: "Barlow";
+  font-size: 1.5rem;
+}
+
+.section-text-bold {
+  font-family: "Barlow Bold";
+  font-size: 1.5rem;
+}
+
+.section-text-condensed {
+  font-family: "Barlow";
+  line-height: 0.8;
+  font-size: 1.5rem;
+}
+
+.section-text-condensed-bold {
+  font-family: "Barlow Bold";
+  line-height: 0.8;
+  font-size: 1.5rem;
 }
 
 /****** Forms ******/
@@ -439,10 +499,25 @@ a:hover {
   text-transform: uppercase;
 }
 
+.section-sub-title-lowercase {
+  font-family: "Barlow Bold";
+}
+
 .section-sub-title-green {
   font-family: "Barlow Bold";
   text-transform: uppercase;
   color: #319e6e;
+}
+
+.section-sub-title-green-lowercase {
+  font-family: "Barlow Bold";
+  color: #319e6e;
+  text-align: center;
+}
+
+.section-sub-title-blue-lowercase {
+  font-family: "Barlow Bold";
+  color: #051746;
 }
 
 .section-sub-title-blue {
@@ -513,6 +588,14 @@ a:hover {
 /****************Homepage: devenir exposant section***********/
 .devenir-exposant-section {
   background-color: #319e6e;
+}
+
+.green-card {
+  background-color: #319e6e;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /**************Homepage: Articles BIM*******************/
@@ -969,6 +1052,103 @@ a:hover {
   color: #319e6e;
 }
 
+/************HOMEPAGE Carousel************/
+#carousel-container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  align-items: center;
+}
+
+#carousel-items-holder {
+  flex-grow: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+#carousel-items-container {
+  width: 100%;
+  display: flex;
+  transition: transform .3s;
+}
+
+.carousel-item {
+  height: 100%;
+  width: 20%;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-item-content {
+  margin: 10px;
+  flex-grow: 1;
+  border: 3px solid #1e4693;
+  border-radius: 1.5rem;
+}
+
+#carousel-left,
+#carousel-right,
+#carousel-left-button,
+#carousel-right-button {
+  background-color: #319e6e;
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+  width: 80px;
+  flex-shrink: 0;
+  height: 80px;
+}
+
+#carousel-left-button,
+#carousel-right-button { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#carousel-left img,
+#carousel-left-button img, 
+#carousel-right img,
+#carousel-right-button img {
+  width: 80%;
+}
+
+#carousel-left-button {
+  position: absolute;
+  z-index: 1029;
+  left: 0;
+}
+
+#carousel-right-button {
+  position: absolute;
+  z-index: 1029;
+  right: 0;
+}
+
+.carousel-item-content img{
+  border-radius: 1.5rem;
+}
+
+@media (min-width: 521px) and (max-width: 990px){
+  .carousel-item {
+      width: 33.33%;
+  }
+}
+@media (max-width: 520px) {
+  .carousel-item {
+      width: 100%;
+  }
+}
+@media (min-width: 991px) {
+  .carousel-item {
+      width: 20%;
+  }
+}
 /*********responsive************/
 @media (max-width: 991px) {
   body.modal-open .navbar {
@@ -1028,6 +1208,22 @@ a:hover {
 
   .carousel-img {
     height: 70vw;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+  }
+
+  .hero-title-shadow {
+    font-size: 4rem;
+  }
+
+  .event-infos {
+    font-size: 3rem;
+  }
+
+  .hero-logo {
+    width: 100px;
   }
 }
 
