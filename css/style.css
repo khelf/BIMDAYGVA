@@ -1072,7 +1072,7 @@ a:hover {
   transition: transform .3s;
 }
 
-.carousel-item {
+#carousel-items-container .carousel-item {
   height: 100%;
   width: 20%;
   flex-shrink: 0;
@@ -1135,17 +1135,17 @@ a:hover {
 }
 
 @media (min-width: 521px) and (max-width: 990px){
-  .carousel-item {
+  #carousel-items-container .carousel-item {
       width: 33.33%;
   }
 }
 @media (max-width: 520px) {
-  .carousel-item {
+  #carousel-items-container .carousel-item {
       width: 100%;
   }
 }
 @media (min-width: 991px) {
-  .carousel-item {
+  #carousel-items-container .carousel-item {
       width: 20%;
   }
 }
